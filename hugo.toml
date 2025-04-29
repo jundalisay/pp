@@ -1,0 +1,1012 @@
+baseURL = 'https://pantrypoints.com/'
+languageCode = 'en-us'
+title = 'Pantrypoints'
+timeout = "300s"
+ignoreLogs = ['warning-goldmark-raw-html']
+theme = "super"
+DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = false
+enableEmoji = true
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = false
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      inline = false
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = false
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepSpecialComments = true
+      keepWhitespace = false
+      templateDelims = ['', '']
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+      version = 2022
+    [minify.tdewolff.json]
+      keepNumbers = false
+      precision = 0
+    [minify.tdewolff.svg]
+      inline = false
+      keepComments = false
+      precision = 0
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+# paginate = 12
+
+[pagination]
+pagerSize = 24
+
+[languages]
+  [languages.en]
+    contentDir = "content/en/" #English
+    weight = 1
+    languageName = "English"
+    [[languages.en.menu.main]]
+        name = "Research"
+        # name = "/icons/book.png"
+        url = "research"
+        weight = 1
+    [[languages.en.menu.main]]
+        identifier = "sp"
+        name = "Core"
+        # name = "/icons/sp.png"
+        url = "superphysics"
+        weight = 2
+    [[languages.en.menu.main]]
+        name = "Math"
+        url = "supermath"
+        weight = 3
+    [[languages.en.menu.main]]
+        name = "FAQs"
+        url = "faqs"
+        weight = 11
+    [[languages.en.menu.main]]
+        name = "News"
+        url = "news"
+        weight = 13
+    [[languages.en.menu.main]]
+        name = "Tags"
+        url = "tags"
+        weight = 14
+    [[languages.en.menu.main]]
+        name = "Help!"
+        # name = "/icons/heart.png"
+        url = "help/"
+        weight = 15
+    [languages.en.params]
+      flag = "/flags/gb.png"
+      title = "Superphysics: Science Merged with Metaphysics"
+      subtitle = "A New Science Based on Waves, Socratic Dialectics, and Cartesian Physics for Solving Problems"
+      lets = "Let's Solve All Problems!"
+      head = "The Sciences That Open Up The Universe"
+      sub = "All Knowledge Can Be Grouped Into Three"
+      banner = "/photos/physics/galaxy.jpg"
+      youtube = "mNwyj7WHKKo"
+
+
+
+    [languages.en.params]
+      main = "The Circular Economy That Solves"
+      sub = "Pantrypoints is a resilient and disruptive new economic system that uses bilateral points through meetups in order to stop inflation, allow full employment, and realize the circular economy"
+      banner = "/photos/holdhands.jpg"
+      wow = "Inflation"
+      youtube = "AfByl9Mywi4"
+
+    [languages.en.params.cta]
+      title = ""
+    [languages.en.params.cta.buttons.a]
+      link = "/register"
+      text = "Register in the Waitlist"
+      color = ""
+    [languages.en.params.cta.buttons.b]
+      link = "https://www.superphysics.org/social/economics"
+      text = "Check out the science"
+      color = ""
+
+    [languages.en.params.req]
+      title = "Among the Mongols who are ignorant of the use of money, cattle are the measures of value. Wealth to them consisted in cattle, as to the Spaniards it consisted in gold and silver. Of the two, the Mongol notion, was nearest to the truth. (Adam Smith)"
+      avatar = "/avatars/smith.png"
+
+    [languages.en.params.tricon1]
+      title = "Introducing Asynchronous Tri-sactions"
+      sub = "Trisactions allow money, moneyless, or metaverse transactions without waiting for fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"
+
+    [languages.en.params.tricon1.items.a]
+      link = "/trisactions/invesure/"
+      img= "/icons/moneyno.png"
+      title = "1: Moneyless"
+      sub = "Moneyless transactions use barter-credits measured in points which are pegged to grains"
+
+    [languages.en.params.tricon1.items.b]
+      link = "/trisactions/banking"
+      img = "/icons/money.png"
+      title = "2: Money"
+      sub = "'Money points' allow money to pay for the moneyless transactions via cash or cashless apps of the fiat economy"
+    [languages.en.params.tricon1.items.c]
+      link = "/services/coins/"
+      img = "/icons/eth.png"
+      title = "3: Metaverse"
+      sub = "The points can be converted to crypto as 'crypto-easing' (our alternative to quantitative easing) to reduce the impact of blockchain on global warming"
+
+    [languages.en.params.feedback]
+      title = "What Experts Say"
+    [languages.en.params.feedback.items.a]
+      img = "/avatars/dhanjoo.jpg"
+      sub = "Prof. Dhanjoo Ghista, University 2020 Foundation President"
+      title = "I very much like this work: A Research Proposal For The Formalization Of The Science Of Supereconomics And The Establishment Of A Points-Based Economic System"
+      link = "http://www.dhanjooghista.com/"
+    [languages.en.params.feedback.items.b]
+      img = "/avatars/gavin.jpg"
+      title = "I believe it is developing into a worthwhile project"
+      sub = "Prof. Gavin Kennedy, a world expert on Adam Smith"
+      link = "http://adamsmithslostlegacy.blogspot.com"
+
+
+
+    [languages.en.params.tricon2]
+      title = "Which Are You?"
+      sub = "Pantrypoints is for everyone"
+
+    [languages.en.params.tricon2.items.a]
+      link = "/services/build/"
+      img= "/icons/shop.png"
+      title = "I'm a micro-small business owner"
+      sub = "I need online presence as a website, web app, mobile app, or social media"
+    [languages.en.params.tricon2.items.b]
+      link = "https://circle.pantrypoints.com/"
+      img = "/icons/jobless.png"
+      title = "I'm Unemployed"
+      sub = "I need to get a job but don't have the required skills"
+    [languages.en.params.tricon2.items.c]
+      link = "/pantrypreneur/educate"
+      img= "/icons/teacher.png"
+      title = "I'm a teacher"
+      sub = "I need to take attendance and visualize student performance"
+    [languages.en.params.tricon2.items.d]
+      link = "/trisactions/health/"
+      img= "/icons/apple.png"
+      title = "I'm health-conscious"
+      sub = "Healtcare is expensive so I need to eat right"
+    [languages.en.params.tricon2.items.f]
+      link = "/trisactions/invesure/"
+      img= "/icons/investor.png"
+      title = "I'm an investor"
+      sub = "I want my investments to make a lot of impact"
+    [languages.en.params.tricon2.items.g]
+      link = "/trisactions/banking"
+      img = "icons/banker.png"
+      title = "I'm a banker"
+      sub = "I want a solution to banking crises. The stress is too much"
+    [languages.en.params.tricon2.items.h]
+      link = "/pantrypreneur/farm/"
+      img = "/icons/farmer.png"
+      title = "I'm a farmer"
+      sub = "I need a solution to global warming!"
+    [languages.en.params.tricon2.items.i]
+      link = "/services/tax"
+      img = "/icons/gov.png"
+      title = "I'm with the Government"
+      sub = "We need to earn more revenue for public services"
+
+    [languages.en.params.tricon3]
+      title = "Locations"
+      sub = "Here are the cities where we are prototyping our system. Feel free to add your city by registering in the waitlist."
+    [languages.en.params.tricon3.items.a]
+      img = "/flags/ph.png"
+      title = "Las Pinas"
+    # [languages.en.params.tricon3.items.b]
+    #   img = "/flags/.png"
+    #   title = "San Pedro Laguna"
+    [languages.en.params.tricon3.items.b]
+      img = "/flags/vn.png"
+      title = "Ho Chi Minh"
+    # [languages.en.params.tricon3.items.d]
+    #   img = "/flags/vn.png"
+    #   title = "Hanoi (coming soon)"
+    [languages.en.params.tricon3.items.c]
+      img = "/flags/bt.png"
+      title = "Thimpu"
+
+    [languages.en.params.tricon3.items.d]
+      img = "/flags/pk.jpg"
+      title = "Peshawar"
+
+
+    [languages.en.params.inca]
+      title = "Originally Built by the Inca"
+      sub = "The Inca made a large scale points-based economic system using strings for points. The Spanish destroyed it and replaced it with the current crisis-prone money-based system."
+      banner = "/photos/inca.jpg"
+      link = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-5872764"
+      linktext = "Read how the Inca system worked"  
+
+    [languages.en.params.inca.items.a]
+      img = "/photos/qullqa.jpg"
+      title = "We implement the Qulqa as pantries"
+    [languages.en.params.inca.items.b]
+      img = "photos/quipu.jpg"
+      title = "We implement the Quipu as points, thus Pantrypoints"
+    # [languages.en.params.inca.items.c]
+    #   img = "photos/quipu.jpg"
+    #   title = "We implement the Quipu as points, thus Pantrypoints"
+
+
+    [languages.en.params.how]
+      title = "How it Works"
+      sub = "The Inca made a large scale points-based economic system using strings for points. The Spanish destroyed it and replaced it with the current crisis-prone money-based system."
+      banner = "/photos/inca.jpg"
+    [languages.en.params.how.steps.a]
+      img = "/screens/pantryshow.jpg"
+      title = "Post your item using a points price instead of a money price"
+      id = 1
+    [languages.en.params.how.steps.b]
+      img = "/photos/shake.jpg"
+      title = "Meetup with the buyers of your item"
+      id = 2
+    [languages.en.params.how.steps.c]
+      img = "/screens/pay.jpg"
+      title = "Pay in points"
+      id = 3
+
+
+  [languages.zh]
+    contentDir = "content/zh"
+    weight = 3
+    languageName = "简体中"
+    [[languages.zh.menu.main]]
+        name = "Trisactions"
+        url  = "trisactions"
+        weight = 1
+    # [[languages.zh.menu.main]]
+    #     name = "Pantrypreneur"
+    #     url  = "pantrypreneur"
+    #     weight = 3
+    [[languages.zh.menu.main]]
+        name = "问题"
+        url = "faq"
+        weight = 8
+
+    [languages.zh.params]
+      main = "解决通货膨胀的"
+      sub = "Pantrypoints是一个弹性的新经济体系，通过会面使用双边积分来制止通货膨胀，实现充分就业和实现循环经济"
+      banner = "/photos/holdhands.jpg"
+      wow = "循环经济"
+      youtube = "fC9dH2Du0sM"
+
+    [languages.zh.params.cta]
+      title = ""
+    [languages.zh.params.cta.buttons.a]
+      link = "/register"
+      text = "请在等候名单上注册"
+    [languages.zh.params.cta.buttons.b]
+      link = "https://www.superphysics.org/social/economics"
+      text = "阅读有关这个理论的内容"
+
+    [languages.zh.params.req]
+      title = "对于对货币一无所知的蒙古人来说，一头牛是价值的衡量标准。对他们来说，财富是以牛的数量来衡量，就像西班牙人以黄金和白银的数量来衡量财富一样。蒙古观念是正确的。（亚当·斯密）"
+      avatar = "/avatars/smith.png"
+
+    [languages.zh.params.tricon1]
+      title = "介绍Tri-sactions（三交易）"
+      sub = "Tri-sactions允许在任何社会条件下进行货币、无货币或元宇宙交易，以实现真正的经济自由"
+    [languages.zh.params.tricon1.items.a]
+      img= "/icons/moneyno.png"
+      title = "1: 没钱"
+      sub = "无货币交易采用储值置换方式，以点数来度量，这些点数与谷物挂钩。 这实现了亚当·斯密在《国富论》 中提到的以谷物为基础的估值方式"
+    [languages.zh.params.tricon1.items.b]
+      img = "/icons/money.png"
+      title = "2: 钱"
+      sub = "货币交易使用“货币点数”，可以通过现金或无现金银行应用程序来支付无货币交易，适用于法定经济"
+    [languages.zh.params.tricon1.items.c]
+      img = "/icons/eth.png"
+      title = "3: 元宇宙"
+      sub = "元宇宙交易则可以将点数转换为“Pantry Coins”，从而通过以太坊来进行受监管的元宇宙交易。 这对于跨境交易以及我们提出的“加密缓解”（我们替代量化宽松政策）非常有用"
+
+
+    [languages.zh.params.tricon2]
+      title = "你的角色是什么？"
+      sub = "Pantrypoints 面向所有人"
+
+    [languages.zh.params.tricon2.items.a]
+      link = "/services/build/"
+      img= "/icons/shop.png"
+      title = "我是一位微小企业主"
+      sub = "我需要在线存在，如网站、Web 应用、移动应用或社交媒体"
+    [languages.zh.params.tricon2.items.b]
+      link = "https://circle.pantrypoints.com/"
+      img = "/icons/jobless.png"
+      title = "我是失业者"
+      sub = "我需要找工作，但没有所需的技能"
+    [languages.zh.params.tricon2.items.c]
+      link = "/pantrypreneur/educate"
+      img= "/icons/teacher.png"
+      title = "我是一名教师"
+      sub = "我需要点名并可视化学生数据"
+    [languages.zh.params.tricon2.items.d]
+      link = "trisactions/health/"
+      img= "/icons/apple.png"
+      title = "我注重健康"
+      sub = "医疗费用昂贵，所以我需要合理饮食"
+    [languages.zh.params.tricon2.items.f]
+      link = "/trisactions/invesure/"
+      img= "/icons/investor.png"
+      title = "我是一名投资者"
+      sub = "我希望我的投资产生很大的影响"
+    [languages.zh.params.tricon2.items.g]
+      link = "trisactions/banking"
+      img = "/icons/banker.png"
+      title = "我是一名银行家"
+      sub = "我需要解决银行危机的方案。压力太大了"
+    [languages.zh.params.tricon2.items.h]
+      link = "/pantrypreneur/farm/"
+      img = "/icons/farmer.png"
+      title = "我是一名农民"
+      sub = "我需要解决全球变暖的方案！"
+    [languages.zh.params.tricon2.items.i]
+      link = "/services/tax"
+      img = "/icons/gov.png"
+      title = "我在政府工作"
+      sub = "我们需要为公共服务赚取更多收入"
+
+
+    [languages.zh.params.inca]
+      title = "最初由印加人建造"
+      sub = "印加人使用绳子制定了一个大规模的基于积分的经济体系。西班牙人摧毁了它，并用当前容易陷入危机的基于货币的体系取而代之"
+      banner = "/photos/inca.jpg"
+      link = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-5872764"
+      linktext = "阅读印加体系的运作方式"
+
+    [languages.zh.params.how]
+      title = "工作原理如下"
+      sub = ""
+    [languages.zh.params.how.steps.a]
+      img = "/screens/pantryshow.jpg"
+      title = "使用点数价格而不是货币价格发布您的物品"
+      id = 1
+    [languages.zh.params.how.steps.b]
+      img = "/photos/shake.jpg"
+      title = "与买家会面"
+      id = 2
+    [languages.zh.params.how.steps.c]
+      img = "/screens/pay.jpg"
+      title = "用点数付款"
+      id = 3
+
+    # [languages.zh.params.feedback]
+    #   title = "专家意见"
+
+
+
+  [languages.de]
+    contentDir = "content/de"
+    weight = 5
+    languageName = "Deutsch"
+
+    [languages.de.params]
+      main = "Die Kreislaufwirtschaft, die die"
+      sub = "Pantrypoints ist ein widerstandsfähiges und disruptives neues Wirtschaftssystem, das bilaterale Punkte durch Treffen nutzt, um die Inflation zu stoppen, Vollbeschäftigung zu ermöglichen und die Kreislaufwirtschaft zu realisieren"
+      banner = "/photos/holdhands.jpg"
+      wow = "Inflation löst"
+      youtube = "AfByl9Mywi4"
+
+    [languages.de.params.cta]
+      title = ""
+    [languages.de.params.cta.buttons.a]
+      link = "/register"
+      text = "Register in the Waitlist"
+      color = ""
+    [languages.de.params.cta.buttons.b]
+      link = "https://www.superphysics.org/social/economics"
+      text = "Check out the science"
+      color = ""
+
+    [languages.de.params.tricon2]
+      title = "Was ist deine Rolle?"
+      sub = "Pantrypoints ist für alle"
+
+    [languages.de.params.tricon2.items.a]
+      link = "/services/build/"
+      img= "/icons/shop.png"
+      title = "Ich bin Inhaber eines Mikrokleinunternehmens"
+      sub = "Ich benötige Online-Präsenz in Form einer Website, Web-App, mobilen App oder in sozialen Medien."
+    [languages.de.params.tricon2.items.b]
+      link = "https://circle.pantrypoints.com/"
+      img = "/icons/jobless.png"
+      title = "Ich bin arbeitslos"
+      sub = "Ich brauche einen Job, habe aber nicht die erforderlichen Fähigkeiten"
+    [languages.de.params.tricon2.items.c]
+      link = "/pantrypreneur/educate"
+      img= "/icons/teacher.png"
+      title = "Ich bin Lehrer"
+      sub = "Ich muss die Anwesenheit und Leistung meiner Schüler aufzeichnen"
+    [languages.de.params.tricon2.items.d]
+      link = "/trisactions/health/"
+      img= "/icons/apple.png"
+      title = "Ich achte auf meine Gesundheit"
+      sub = "Gesundheitsversorgung ist teuer, deshalb muss ich mich richtig ernähren"
+    [languages.de.params.tricon2.items.f]
+      link = "/trisactions/invesure/"
+      img= "/icons/investor.png"
+      title = "Ich bin Investor"
+      sub = "Ich möchte, dass meine Investitionen einen großen Einfluss auf die Wirtschaft haben"
+    [languages.de.params.tricon2.items.g]
+      link = "/trisactions/banking"
+      img = "icons/banker.png"
+      title = "Ich bin Banker"
+      sub = "Ich möchte eine Lösung für Bankenkrisen. Ich bin so gestresst"
+    [languages.de.params.tricon2.items.h]
+      link = "/pantrypreneur/farm/"
+      img = "/icons/farmer.png"
+      title = "Ich bin Landwirt"
+      sub = "Ich brauche eine Lösung für den Klimawandel!"
+    [languages.de.params.tricon2.items.i]
+      link = "/services/tax"
+      img = "/icons/gov.png"
+      title = "Ich arbeite in der Regierung"
+      sub = "Wir müssen mehr Einnahmen für öffentliche Dienstleistungen generieren"
+      
+  [languages.fr]
+    contentDir = "content/fr"
+    weight = 5
+    languageName = "Français"
+
+    [languages.fr.params]
+      main = "L'économie circulaire qui résout"
+      sub = "Pantrypoints est un nouveau système économique résilient et disruptif qui utilise des points bilatéraux lors de rencontres afin de stopper l'inflation, permettre le plein emploi et réaliser l'économie circulaire"
+      banner = "/photos/holdhands.jpg"
+      wow = "l'inflation"
+      youtube = "AfByl9Mywi4"
+
+    [languages.fr.params.cta]
+      title = ""
+    [languages.fr.params.cta.buttons.a]
+      link = "/register"
+      text = "Register in the Waitlist"
+      color = ""
+    [languages.fr.params.cta.buttons.b]
+      link = "https://www.superphysics.org/social/economics"
+      text = "Check out the science"
+      color = ""
+
+    [languages.fr.params.tricon2]
+      title = "Quel est votre rôle?"
+      sub = "Pantrypoints est pour tout le monde"
+ 
+    [languages.fr.params.tricon2.items.a]
+      link = "/services/build/"
+      img= "/icons/shop.png"
+      title = "Je suis propriétaire d'une micro-petite entreprise"
+      sub = "J'ai besoin d'une présence en ligne sous la forme d'un site web, d'une application web, d'une application mobile ou sur les médias sociaux."
+    [languages.fr.params.tricon2.items.b]
+      link = "https://circle.pantrypoints.com/"
+      img = "/icons/jobless.png"
+      title = "Je suis au chômage"
+      sub = "J'ai besoin de trouver un emploi, mais je n'ai pas les compétences requises"
+    [languages.fr.params.tricon2.items.c]
+      link = "/pantrypreneur/educate"
+      img= "/icons/teacher.png"
+      title = "Je suis enseignant"
+      sub = "J'ai besoin de prendre note de la présence et des performances de mes étudiants"
+    [languages.fr.params.tricon2.items.d]
+      link = "/trisactions/health/"
+      img= "/icons/apple.png"
+      title = "Je suis soucieux de ma santé"
+      sub = "Les soins de santé sont chers, donc je dois bien m'alimenter"
+    [languages.fr.params.tricon2.items.f]
+      link = "/trisactions/invesure/"
+      img= "/icons/investor.png"
+      title = "Je suis investisseur"
+      sub = "Je veux que mes investissements aient un impact significatif sur l'économie"
+    [languages.fr.params.tricon2.items.g]
+      link = "/trisactions/banking"
+      img = "icons/banker.png"
+      title = "Je suis banquier"
+      sub = "Je veux une solution aux crises bancaires. Je suis très stressé"
+    [languages.fr.params.tricon2.items.h]
+      link = "/pantrypreneur/farm/"
+      img = "/icons/farmer.png"
+      title = "Je suis agriculteur"
+      sub = "J'ai besoin d'une solution au réchauffement climatique!"
+    [languages.fr.params.tricon2.items.i]
+      link = "/services/tax"
+      img = "/icons/gov.png"
+      title = "Je travaille dans le gouvernement"
+      sub = "Nous devons augmenter nos revenus pour les services publics"
+
+
+  [languages.hi]
+    contentDir = "content/hi"
+    weight = 8
+    languageName = "Hindi"
+
+    [languages.hi.params]
+      main = " मुद्रास्फीति का समाधान करने वाली परिपत्र अर्थव्यवस्था।"
+      sub = "पैंट्रीपॉइंट्स एक लचीला और व्यवस्था को बदलने वाला नया आर्थिक सिस्टम है जो मुद्रास्फीति को रोकने, पूर्ण रोजगार की अनुमति देने और परिपत्र अर्थव्यवस्था को साकार करने के लिए मिलनसारों के माध्यम से द्विपक्षीय बिंदुओं का उपयोग करता है।"
+      banner = "/photos/holdhands.jpg"
+      # wow = "Inflation"
+      youtube = "AfByl9Mywi4"
+
+    [languages.hi.params.cta]
+      title = ""
+    [languages.hi.params.cta.buttons.a]
+      link = "/register"
+      text = "Register in the Waitlist"
+      color = ""
+    [languages.hi.params.cta.buttons.b]
+      link = "https://www.superphysics.org/social/economics"
+      text = "Check out the science"
+      color = ""
+
+    [languages.hi.params.tricon2]
+      title = "आपकी भूमिका क्या है?"
+      sub = "Pantrypoints सभी के लिए है।"
+
+    [languages.hi.params.tricon2.items.a]
+      link = "/services/build/"
+      img= "/icons/shop.png"
+      title = "मैं एक माइक्रो-छोटे व्यापार का मालिक हूँ।"
+      sub = "मुझे एक वेबसाइट, वेब ऐप, मोबाइल एप्लिकेशन, या सोशल मीडिया के रूप में ऑनलाइन प्रतिष्ठान चाहिए।"
+    [languages.hi.params.tricon2.items.b]
+      link = "https://circle.pantrypoints.com/"
+      img = "/icons/jobless.png"
+      title = "मैं बेरोजगार हूँ।"
+      sub = "मुझे नौकरी मिलनी चाहिए, लेकिन मेरे पास आवश्यक कौशल नहीं हैं।"
+    [languages.hi.params.tricon2.items.c]
+      link = "/pantrypreneur/educate"
+      img= "/icons/teacher.png"
+      title = "मैं शिक्षक हूँ।"
+      sub = "मुझे अपने छात्रों की उपस्थिति और प्रदर्शन का रिकॉर्ड रखना है।"
+    [languages.hi.params.tricon2.items.d]
+      link = "/trisactions/health/"
+      img= "/icons/apple.png"
+      title = "मैं स्वास्थ्य-चेतना हूँ।"
+      sub = "स्वास्थ्य सेवाएं महंगी हैं, इसलिए मुझे सही तरीके से खाना चाहिए।"
+    [languages.hi.params.tricon2.items.f]
+      link = "/trisactions/invesure/"
+      img= "/icons/investor.png"
+      title = "मैं एक निवेशक हूँ।"
+      sub = "मुझे चाहिए कि मेरे निवेशों का अर्थशास्त्र पर बड़ा प्रभाव हो।"
+    [languages.hi.params.tricon2.items.g]
+      link = "/trisactions/banking"
+      img = "icons/banker.png"
+      title = "मैं एक बैंकर हूँ।"
+      sub = "मैं एक बैंकर हूँ। मुझे बैंक संकटों का समाधान चाहिए। मैं इतना तनाव में हूँ।"
+    [languages.hi.params.tricon2.items.h]
+      link = "/pantrypreneur/farm/"
+      img = "/icons/farmer.png"
+      title = "मैं किसान हूँ।"
+      sub = "मुझे ग्लोबल वार्मिंग का समाधान चाहिए!"
+    [languages.hi.params.tricon2.items.i]
+      link = "/services/tax"
+      img = "/icons/gov.png"
+      title = "मैं सरकार में काम करता हूँ।"
+      sub = "हमें सार्वजनिक सेवाओं के लिए अधिक राजस्व कमाने की आवश्यकता है।"
+
+  [languages.jp]
+    contentDir = "content/jp"
+    weight = 9
+    languageName = "日本語"
+
+    [languages.jp.params]
+      main = "インフレを解決する循環型経済。"
+      sub = "Pantrypointsは、出会いを介して二国間のポイント制を採用し、インフレを抑制し、完全雇用を可能にし、循環型経済を実現する、レジリエントで破壊的な新しい経済システムです"
+      banner = "/photos/holdhands.jpg"
+      # wow = "Inflation"
+      youtube = "AfByl9Mywi4"
+
+    [languages.jp.params.cta]
+      title = ""
+    [languages.jp.params.cta.buttons.a]
+      link = "/register"
+      text = "Register in the Waitlist"
+      color = ""
+    [languages.jp.params.cta.buttons.b]
+      link = "https://www.superphysics.org/social/economics"
+      text = "Check out the science"
+      color = ""
+
+    [languages.jp.params.tricon2]
+      title = "あなたの役割は何ですか？"
+      sub = "Pantrypointsはみんなのためです"
+
+    [languages.jp.params.tricon2.items.a]
+      link = "/services/build/"
+      img= "/icons/shop.png"
+      title = "私はマイクロ・スモール・ビジネスのオーナーです"
+      sub = "ウェブサイト、Webアプリ、モバイルアプリ、またはソーシャルメディアとしてのオンラインプレゼンスが必要です。"
+    [languages.jp.params.tricon2.items.b]
+      link = "https://circle.pantrypoints.com/"
+      img = "/icons/jobless.png"
+      title = "私は失業中です"
+      sub = "仕事を得る必要がありますが、必要なスキルがありません。"
+    [languages.jp.params.tricon2.items.c]
+      link = "/pantrypreneur/educate"
+      img= "/icons/teacher.png"
+      title = "私は教師です"
+      sub = "学生の出席とパフォーマンスを記録する必要があります"
+    [languages.jp.params.tricon2.items.d]
+      link = "/trisactions/health/"
+      img= "/icons/apple.png"
+      title = "私は健康に気を使っています"
+      sub = "医療は高額なので、正しく食事をする必要があります"
+    [languages.jp.params.tricon2.items.f]
+      link = "/trisactions/invesure/"
+      img= "/icons/investor.png"
+      title = "私は投資家です"
+      sub = "私の投資が経済に多くの影響を与えることを望んでいます"
+    [languages.jp.params.tricon2.items.g]
+      link = "/trisactions/banking"
+      img = "icons/banker.png"
+      title = "私は銀行家です"
+      sub = "銀行危機の解決策が欲しいです。私はとてもストレスを感じています"
+    [languages.jp.params.tricon2.items.h]
+      link = "/pantrypreneur/farm/"
+      img = "/icons/farmer.png"
+      title = "私は農夫です"
+      sub = "地球温暖化の解決策が必要です！"
+    [languages.jp.params.tricon2.items.i]
+      link = "/services/tax"
+      img = "/icons/gov.png"
+      title = "私は政府で働いています"
+      sub = "公共サービスのために収益を増やす必要があります"
+
+
+  [languages.es]
+    contentDir = "content/es"
+    weight = 10
+    languageName = "Español"
+    [[languages.es.menu.main]]
+        name = "Trisactions"
+        url  = "trisactions"
+        weight = 1
+    [[languages.es.menu.main]]
+        name = "FAQ"
+        url = "faq"
+        weight = 8
+    [languages.es.params]
+      main = "La Economía Circular que Resuelve "
+      sub = "Pantrypoints es un nuevo sistema económico resiliente que utiliza puntos bilaterales a través de reuniones para detener la inflación, permitir el pleno empleo y lograr la economía circular"
+      banner = "/photos/holdhands.jpg"
+      wow = "la Inflación"
+      youtube = "q04lTIW48Oo"
+
+    [languages.es.params.cta]
+      title = ""
+    [languages.es.params.cta.buttons.a]
+      link = "/register"
+      text = "Regístrese en la lista de espera"
+      color = ""
+    [languages.es.params.cta.buttons.b]
+      link = "https://www.superphysics.org/social/economics"
+      text = "Lea acerca de la teoría"
+      color = ""
+
+    # Regístrate en la aplicación. Lee la Ciencia de nuestro sistema.
+
+    [languages.es.params.req]
+      title = "Para los mongoles que desconocían el uso del dinero, una vaca era la medida de valor. La riqueza para ellos se medía en la cantidad de vacas, al igual que para los españoles la riqueza se medía en la cantidad de oro y plata. La noción mongol es más correcta. (Adam Smith)"
+      avatar = "/avatars/smith.png"
+
+    [languages.es.params.tricon1]
+      title = "Presentando Tri-sacciones"
+      sub = "Tri-sacciones permiten transacciones con dinero, sin dinero o en el metaverso para permitir que la economía funcione bajo cualquier condición social, permitiendo una verdadera libertad económica"
+    [languages.es.params.tricon1.items.a]
+      link = "/trisactions/invesure/"
+      img= "/icons/moneyno.png"
+      title = "1: Sin dinero"
+      sub = "Las transacciones sin dinero utilizan trueque de valor almacenado medido en puntos que están ligados a granos"
+    [languages.es.params.tricon1.items.b]
+      link = "/trisactions/banking"
+      img = "icons/money.png"
+      title = "2: Dinero"
+      sub = "Los puntos monetarios permiten utilizar dinero para pagar las transacciones sin dinero a través de efectivo o aplicaciones bancarias sin efectivo de la economía fiduciaria"
+    [languages.es.params.tricon1.items.c]
+      link = "/services/coins/"
+      img = "/icons/eth.png"
+      title = "3: Metaverso"
+      sub = "Los puntos pueden convertirse en Monedas de Despensa para permitir transacciones reguladas desde el metaverso a través de Ethereum. Esto es útil para transacciones internacionales y nuestra propuesta de cripto-alivio (nuestra alternativa a la flexibilización cuantitativa)"
+
+    [languages.es.params.feedback]
+      title = "What Experts Say"
+    [languages.es.params.feedback.items.a]
+      img = "/avatars/dhanjoo.jpg"
+      sub = "Prof. Dhanjoo Ghista, University 2020 Foundation President"
+      title = "I very much like this work: A Research Proposal For The Formalization Of The Science Of Supereconomics And The Establishment Of A Points-Based Economic System"
+      link = "http://www.dhanjooghista.com/"
+    [languages.es.params.feedback.items.b]
+      img = "/avatars/gavin.jpg"
+      title = "I believe it is developing into a worthwhile project"
+      sub = "Prof. Gavin Kennedy, a world expert on Adam Smith"
+      link = "http://adamsmithslostlegacy.blogspot.com"
+
+    [languages.es.params.tricon2]
+      title = "¿Cuál es tu rol?"
+      sub = "Pantrypoints es para todos."
+    [languages.es.params.tricon2.items.a]
+      link = "/services/build/"
+      img= "/icons/shop.png"
+      title = "Soy dueño de un micropequeño negocio."
+      sub = "Necesito presencia en línea, ya sea como un sitio web, aplicación web, aplicación móvil o en redes sociales."
+    [languages.es.params.tricon2.items.b]
+      link = "https://circle.pantrypoints.com/"
+      img = "/icons/jobless.png"
+      title = "Estoy desempleado"
+      sub = "Necesito conseguir un trabajo, pero no tengo las habilidades requeridas."
+    [languages.es.params.tricon2.items.c]
+      link = "/pantrypreneur/educate"
+      img= "/icons/teacher.png"
+      title = "Soy profesor"
+      sub = "Necesito llevar un registro de la asistencia y el rendimiento de mis estudiantes."
+    [languages.es.params.tricon2.items.d]
+      link = "/trisactions/health/"
+      img= "/icons/apple.png"
+      title = "Soy consciente de la salud"
+      sub = "La atención médica es costosa, así que necesito alimentarme bien."
+    [languages.es.params.tricon2.items.f]
+      link = "/trisactions/invesure/"
+      img= "/icons/investor.png"
+      title = "Soy inversor"
+      sub = "Quiero que mis inversiones tengan un gran impacto en la economía"
+    [languages.es.params.tricon2.items.g]
+      link = "/trisactions/banking"
+      img = "icons/banker.png"
+      title = "Soy banquero"
+      sub = "Necesito una solución para las crisis bancarias. Estoy muy estresado"
+    [languages.es.params.tricon2.items.h]
+      link = "/pantrypreneur/farm/"
+      img = "/icons/farmer.png"
+      title = "Soy agricultor"
+      sub = "¡Necesito una solución para el calentamiento global!"
+    [languages.es.params.tricon2.items.i]
+      link = "/services/tax"
+      img = "/icons/gov.png"
+      title = "Trabajo en el Gobierno"
+      sub = "Necesitamos obtener más ingresos para los servicios públicos."
+
+    # [languages.es.params.tricon3]
+    #   title = "Locations"
+    #   sub = "Here are the cities where we are prototyping our system. Feel free to add your city by registering in the waitlist."
+    # [languages.es.params.tricon3.items.a]
+    #   img = "/flags/ph.png"
+    #   title = "Las Pinas"
+    # [languages.es.params.tricon3.items.b]
+    #   img = "/flags/ph.png"
+    #   title = "San Pedro Laguna"
+    # [languages.es.params.tricon3.items.c]
+    #   img = "/flags/vn.png"
+    #   title = "Ho Chi Minh"
+    # [languages.es.params.tricon3.items.d]
+    #   img = "/flags/vn.png"
+    #   title = "Hanoi"
+    # [languages.es.params.tricon3.items.e]
+    #   img = "/flags/my.png"
+    #   title = "Kuala Lumpur"
+
+    [languages.es.params.inca]
+      title = "Originally Built by the Inca"
+      sub = "The Inca made a large scale points-based economic system using strings for points. The Spanish destroyed it and replaced it with the current crisis-prone money-based system."
+      banner = "/photos/inca.jpg"
+      link = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-5872764"
+      linktext = "Read how the Inca system worked"  
+
+    [languages.es.params.inca.items.a]
+      img = "/photos/qullqa.jpg"
+      title = "We implement the Qulqa as pantries"
+    [languages.es.params.inca.items.b]
+      img = "photos/quipu.jpg"
+      title = "We implement the Quipu as points, thus Pantrypoints"
+
+    [languages.es.params.how]
+      title = "Cómo funciona"
+      sub = "Publica tu artículo usando un precio en puntos en lugar de un precio en dinero"
+      banner = "/screens/pantryshow.jpg"
+    [languages.es.params.how.steps.a]
+      img = "/photos/qullqa.jpg"
+      title = "Reúnete con los compradores de tu artículo"
+      id = 1
+    [languages.es.params.how.steps.b]
+      img = "/photos/shake.jpg"
+      title = "Meetup with the buyers of your item"
+      id = 2
+    [languages.es.params.how.steps.c]
+      img = "/screens/pay.jpg"
+      title = "Paga con puntos"
+      id = 3
+
+
+
+[params]
+  logo = "/icons/pantry50.png"
+  
+  # Enable the darkmode toggle in header
+  darkModeToggle = true
+  
+  # Enable search in header
+  enableSearch = true
+
+  # Option to customize the search parameters of a page
+  # Below are the supported options; Note that including entire content
+  # may slowdown the loading of search results
+  # Title of page is included by default
+  # searchKeys = [
+  #   "title",
+  #   "link",
+  #   "description"
+  # ]
+  searchKeys = [
+    "tags",
+    "date",
+    "categories",
+    "summary",
+    "content",
+    "link",
+    "author"
+  ]
+
+  # Custom copyright - optional
+  copyright = "Copyright © 2024 | <a href='/company/'>Pantrypoints Technologies</a> | Based on <a href='https://www.superphysics.org'>Superphysics</a>"
+  favicon = "/icons/pantry50.png"
+
+  ascentColor = "bg-blue-100"
+
+  # The page bundle that is shown on the front page
+  frontBundle = "blog"
+
+  # Used to hide the post metadata such as posted date, reading time and word count
+  # Can be used at site level or page level
+  hideMeta = false
+
+  # To hide "Other languages" option if the post is available in multiple languages
+  # Can be used at site level or page level
+  hideOtherLanguages = false
+
+  # Add support for Table of contents
+  # Can be added to a page level also in markdown frontmatter
+  toc = true
+
+
+  hidePageThumbnail = false
+
+# Comments system
+[params.comments]
+  system = "giscus"
+
+  repo="jundalisay/superblist"
+  repo-id="R_kgDOKk--Tw"
+  category="General"
+  category-id="DIC_kwDOKk--T84CacDf"
+  mapping="pathname"
+  strict="0"
+  reactions-enabled="1"
+  emit-metadata="0"
+  input-position="bottom"
+  theme="preferred_color_scheme"
+  lang="en"
+  crossorigin="anonymous"
+
+  # Options for utterances, exclude hyphens
+  # repo = ""
+  # issueterm = ""
+  # theme = ""
+
+[params.homepage.social]
+  # Global params common for both languages
+  # title = "Follow or Support Us!"
+  # description = "We're building a new science and new systems for a better reality"
+
+  [[params.homepage.social.icons]]
+    website = "twitter"
+    url = "https://twitter.com/pantrypoints"
+  [[params.homepage.social.icons]]
+    website = "youtube"
+    url = "https://www.youtube.com/@pantrypoints"
+  # [[params.homepage.social.icons]]
+  #   website = "instagram"
+  #   link = "https://instagram.com"
+  [[params.homepage.social.icons]]
+    website = "facebook"
+    url = "https://www.facebook.com/pantrypoints/"
+  # [[params.homepage.social.icons]]
+  #   website = "behance"
+  #   link = "https://behance.net"
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
+
+
+[[params.social]]
+  name = "Facebook"
+  icon = "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-brand-facebook' width='30' height='30' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'> <path stroke='none' d='M0 0h24v24H0z' fill='none'></path> <path d='M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3'></path> </svg>"
+  url = "https://www.facebook.com/superphysicsorg"
+[[params.social]]
+  name = "Youtube"
+  icon = "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-brand-youtube' width='30' height='30' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round' > <path stroke='none' d='M0 0h24v24H0z' fill='none' /> <circle cx='12' cy='12' r='9' /> <path d='M10 9l5 3l-5 3z' /> </svg>"
+  url = "https://www.youtube.com/@superphysicsorg"
+[[params.social]]
+  name = "Twitter"
+  icon = "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round' > <path stroke='none' d='M0 0h24v24H0z' fill='none' /> <path d='M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z'/> </svg>"
+  url = "https://x.com/superphysicsorg"
+
+
+[[params.books]]
+  name = "Supereconomics in a Nutshell"
+  img = "/graphics/econ/superecon.jpg"
+  url = "https://www.amazon.com/Supereconomics-Nutshell-Based-Four-Value-ebook/dp/B0F1G35KPF"
+  # url = "https://play.google.com/store/books/details?id=6bhGEQAAQBAJ"
+[[params.books]]
+  name = "The Republic by Plato Simplified"
+  img = "/books/rep.jpg"
+  url = "https://play.google.com/store/books/details/Juan_Dalisay_Jr_The_Simple_Republic_by_Plato?id=WlkBEAAAQBAJ"
+[[params.books]]
+  name = "A Treatise of Human Nature Book 1"
+  img = "/books/t1.jpg"
+  url = "https://play.google.com/store/books/details/Juan_Dalisay_Jr_The_Simple_Treatise_of_Human_Natur?id=iF_XDwAAQBAJ"
+[[params.books]]
+  name = "A Treatise of Human Nature Book 1"
+  img = "/books/t2.jpg"
+  url = "Juan_Dalisay_Jr_The_Simple_Treatise_of_Human_Natur?id=nZjqDwAAQBAJ"
+[[params.books]]
+  name = "A Treatise of Human Nature Book 3"
+  img = "/books/t3.jpg"
+  url = "https://play.google.com/store/books/details/Juan_Dalisay_Jr_The_Simple_Treatise_of_Human_Natur?id=ikj9DwAAQBAJ"
+[[params.books]]
+  name = "The Wealth of Nations 1"
+  img = "/books/w1.jpg"
+  url = "https://play.google.com/store/books/details/Juan_Dalisay_Jr_The_Simple_Wealth_of_Nations_by_Ad?id=BjnPDwAAQBAJ"
+[[params.books]]
+  name = "The Wealth of Nations Books 2 and 3"
+  img = "/books/w2.jpg"
+  url = "https://play.google.com/store/books/details/Juan_Dalisay_Jr_The_Simple_Wealth_of_Nations_by_Ad?id=0iHMDwAAQBAJ"
+[[params.books]]
+  name = "The Wealth of Nations Book 5"
+  img = "/books/w5.jpg"
+  url = "https://play.google.com/store/books/details/Juan_Dalisay_Jr_The_Simple_Wealth_of_Nations_by_Ad?id=WyYAEAAAQBAJ"
+
+
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,14 @@
+<div class="container text-center pb-8">
+  <h3 class="text-4xl mb-4 font-extrabold tracking-tight leading-none">{{ .title }}</h1>
+    
+  <div class="flex flex-wrap justify-center my-4">
+    {{ range .buttons }}
+      <a href="{{ .link }}">
+        <button type="button" class="{{ .color }} inline-flex shadow-lg items-center px-4 py-2 text-sm font-medium rounded-lg inline-block dark:bg-secondary-100 dark:hover:bg-neutral-700 hover:bg-gray-100 m-2 text-gray-900" style="">
+          <small>{{ .text }}</small>
+        </button>
+      </a>
+    {{ end }}
+  </div>
+</div>
+

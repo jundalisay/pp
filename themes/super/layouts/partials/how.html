@@ -1,0 +1,102 @@
+
+
+<div class="section text-center mx-auto px-6 lg:px-24 mt-16">
+  <h3 class="mb-4 text-4xl mb-4 font-extrabold tracking-tight leading-none">{{ .title | markdownify }}</h3>
+
+  <ul class="wrapper text-center mx-4 px-4">
+    <div class="buttonWrapper">
+      {{ range $i, $p := .steps }}
+        <button class="tab-button" style="" data-id={{ $p.id }}>{{ i18n "step" }} {{ $p.id }}</button>
+      {{ end }}
+    </div>
+    <div class="contentWrapper">
+      {{ range $i, $p := .steps }}
+        <div class="contenthow text-center my-2 active" id="{{ $p.id }}">
+          {{ .title | markdownify }}
+            <figure>
+              <img class="p-4 image mx-auto rounded-lg" src="{{ .img | absURL }}" style="object-position: center; object-fit: cover;">
+            </figure>                
+        </div>
+      {{ end }}      
+    </div>
+  </div>
+
+</div>
+
+
+
+<style type="text/css">
+  .wrapper {
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+  }
+
+  .buttonWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  button {
+    letter-spacing: 3px;
+    border: none;
+    padding: 10px;
+    background-color: #bccbe9;
+    color: #232c3d;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  button:hover {
+    background-color: #d5e3ff;
+  }
+
+  button.active {
+    background-color: white;
+  }
+
+  .active {
+  }
+
+  .contenthow {
+    display: none;
+    padding: 10px 20px;
+  }
+
+  .contenthow.active {
+    display: block;
+  }
+</style>
+
+
+
+<script type="text/javascript">
+  const tabs = document.querySelector(".wrapper");
+  const tabButton = document.querySelectorAll(".tab-button");
+  const contents = document.querySelectorAll(".contenthow");
+
+  var step2 = document.getElementById("2");
+  // step2.style.display = 'none';
+  step2.classList.remove("active");
+  var step3 = document.getElementById("3");
+  step3.classList.remove("active");  
+  // step3.style.display = 'none';
+
+  tabs.onclick = e => {
+    const id = e.target.dataset.id;
+    if (id) {
+      tabButton.forEach(btn => {
+        btn.classList.remove("active");
+      });
+      e.target.classList.add("active");
+      e.target.style.display = 'block';
+
+      contents.forEach(content => {
+        content.classList.remove("active");
+      });
+      const element = document.getElementById(id);
+      element.classList.add("active");
+    }
+  }
+</script>
