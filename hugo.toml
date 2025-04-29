@@ -63,22 +63,33 @@ enableEmoji = true
 [pagination]
 pagerSize = 24
 
+
 [languages]
   [languages.en]
-    contentDir = "content/en/" #English
+    contentDir = "content/en"
     weight = 1
     languageName = "English"
+
     [[languages.en.menu.main]]
-        name = "Research"
-        # name = "/icons/book.png"
-        url = "research"
-        weight = 1
+      identifier = "pantrypoints"
+      name = "Pantrypoints"
+      url = "/pantrypoints/"
+      weight = 1
+
     [[languages.en.menu.main]]
-        identifier = "sp"
-        name = "Core"
-        # name = "/icons/sp.png"
-        url = "superphysics"
-        weight = 2
+      identifier = "pantypreneur"
+      name = "Pantypreneur"
+      url = "/pantypreneur/"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      identifier = "services"
+      name = "Services"
+      url = "/supermath/"
+      weight = 3
+
+
+
     [[languages.en.menu.main]]
         name = "Math"
         url = "supermath"
@@ -106,13 +117,6 @@ pagerSize = 24
       subtitle = "A New Science Based on Waves, Socratic Dialectics, and Cartesian Physics for Solving Problems"
       lets = "Let's Solve All Problems!"
       head = "The Sciences That Open Up The Universe"
-      sub = "All Knowledge Can Be Grouped Into Three"
-      banner = "/photos/physics/galaxy.jpg"
-      youtube = "mNwyj7WHKKo"
-
-
-
-    [languages.en.params]
       main = "The Circular Economy That Solves"
       sub = "Pantrypoints is a resilient and disruptive new economic system that uses bilateral points through meetups in order to stop inflation, allow full employment, and realize the circular economy"
       banner = "/photos/holdhands.jpg"
@@ -130,30 +134,31 @@ pagerSize = 24
       text = "Check out the science"
       color = ""
 
-    [languages.en.params.req]
-      title = "Among the Mongols who are ignorant of the use of money, cattle are the measures of value. Wealth to them consisted in cattle, as to the Spaniards it consisted in gold and silver. Of the two, the Mongol notion, was nearest to the truth. (Adam Smith)"
-      avatar = "/avatars/smith.png"
+    [[languages.en.params.quote1]]
+      content = "Among the Mongols who are ignorant of the use of money, cattle are the measures of value. Wealth to them consisted in cattle, as to the Spaniards it consisted in gold and silver. Of the two, the Mongol notion, was nearest to the truth."
+      icon = "Adam Smith"
+      author = "Adam Smith"
+      src = "The Wealth of Nations"
 
-    [languages.en.params.tricon1]
-      title = "Introducing Asynchronous Tri-sactions"
-      sub = "Trisactions allow money, moneyless, or metaverse transactions without waiting for fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"
-
-    [languages.en.params.tricon1.items.a]
-      link = "/trisactions/invesure/"
-      img= "/icons/moneyno.png"
+    [[languages.en.params.icons]]
+      icon = "/icons/moneyno.png"
       title = "1: Moneyless"
       sub = "Moneyless transactions use barter-credits measured in points which are pegged to grains"
-
-    [languages.en.params.tricon1.items.b]
+      link = "/trisactions/invesure/"
+    [[languages.en.params.icons]]
       link = "/trisactions/banking"
       img = "/icons/money.png"
       title = "2: Money"
       sub = "'Money points' allow money to pay for the moneyless transactions via cash or cashless apps of the fiat economy"
-    [languages.en.params.tricon1.items.c]
+    [[languages.en.params.icons]]
       link = "/services/coins/"
       img = "/icons/eth.png"
       title = "3: Metaverse"
       sub = "The points can be converted to crypto as 'crypto-easing' (our alternative to quantitative easing) to reduce the impact of blockchain on global warming"
+
+    [languages.en.params.tricon1]
+      title = "Introducing Asynchronous Tri-sactions"
+      sub = "Trisactions allow money, moneyless, or metaverse transactions without waiting for fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"    
 
     [languages.en.params.feedback]
       title = "What Experts Say"
@@ -244,7 +249,7 @@ pagerSize = 24
       sub = "The Inca made a large scale points-based economic system using strings for points. The Spanish destroyed it and replaced it with the current crisis-prone money-based system."
       banner = "/photos/inca.jpg"
       link = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-5872764"
-      linktext = "Read how the Inca system worked"  
+      linktext = "Read how the Inca system worked"
 
     [languages.en.params.inca.items.a]
       img = "/photos/qullqa.jpg"
@@ -252,27 +257,34 @@ pagerSize = 24
     [languages.en.params.inca.items.b]
       img = "photos/quipu.jpg"
       title = "We implement the Quipu as points, thus Pantrypoints"
-    # [languages.en.params.inca.items.c]
-    #   img = "photos/quipu.jpg"
-    #   title = "We implement the Quipu as points, thus Pantrypoints"
 
 
-    [languages.en.params.how]
-      title = "How it Works"
-      sub = "The Inca made a large scale points-based economic system using strings for points. The Spanish destroyed it and replaced it with the current crisis-prone money-based system."
-      banner = "/photos/inca.jpg"
-    [languages.en.params.how.steps.a]
-      img = "/screens/pantryshow.jpg"
-      title = "Post your item using a points price instead of a money price"
-      id = 1
-    [languages.en.params.how.steps.b]
-      img = "/photos/shake.jpg"
-      title = "Meetup with the buyers of your item"
-      id = 2
-    [languages.en.params.how.steps.c]
-      img = "/screens/pay.jpg"
-      title = "Pay in points"
-      id = 3
+    [languages.en.params.how]  # <-- Single brackets define a table
+      title = "How It Works"
+      sub = "..."
+      steps = [
+        { id = 1, img = "/photos/physics/quasar.jpg", title = "Step 1: Gather Data", sub = "First, we collect relevant information..." },
+        { id = 2, img = "/photos/another.jpg", title = "Step 2: Analyze", sub = "Next, we analyze the findings..." },
+        { id = 3, img = "/photos/yetanother.jpg", title = "Step 3: Conclude", sub = "Finally, we draw conclusions..." }
+        # Add more steps as needed
+      ]
+
+    # [languages.en.params.how]
+    #   title = "How it Works"
+    #   sub = "The Inca made a large scale points-based economic system using strings for points. The Spanish destroyed it and replaced it with the current crisis-prone money-based system."
+    #   banner = "/photos/inca.jpg"
+    # [languages.en.params.how.steps.a]
+    #   img = "/screens/pantryshow.jpg"
+    #   title = "Post your item using a points price instead of a money price"
+    #   id = 1
+    # [languages.en.params.how.steps.b]
+    #   img = "/photos/shake.jpg"
+    #   title = "Meetup with the buyers of your item"
+    #   id = 2
+    # [languages.en.params.how.steps.c]
+    #   img = "/screens/pay.jpg"
+    #   title = "Pay in points"
+    #   id = 3
 
 
   [languages.zh]
@@ -382,21 +394,21 @@ pagerSize = 24
       link = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-5872764"
       linktext = "阅读印加体系的运作方式"
 
-    [languages.zh.params.how]
-      title = "工作原理如下"
-      sub = ""
-    [languages.zh.params.how.steps.a]
-      img = "/screens/pantryshow.jpg"
-      title = "使用点数价格而不是货币价格发布您的物品"
-      id = 1
-    [languages.zh.params.how.steps.b]
-      img = "/photos/shake.jpg"
-      title = "与买家会面"
-      id = 2
-    [languages.zh.params.how.steps.c]
-      img = "/screens/pay.jpg"
-      title = "用点数付款"
-      id = 3
+    # [languages.zh.params.how]
+    #   title = "工作原理如下"
+    #   sub = ""
+    # [languages.zh.params.how.steps.a]
+    #   img = "/screens/pantryshow.jpg"
+    #   title = "使用点数价格而不是货币价格发布您的物品"
+    #   id = 1
+    # [languages.zh.params.how.steps.b]
+    #   img = "/photos/shake.jpg"
+    #   title = "与买家会面"
+    #   id = 2
+    # [languages.zh.params.how.steps.c]
+    #   img = "/screens/pay.jpg"
+    #   title = "用点数付款"
+    #   id = 3
 
     # [languages.zh.params.feedback]
     #   title = "专家意见"
@@ -608,74 +620,6 @@ pagerSize = 24
       title = "मैं सरकार में काम करता हूँ।"
       sub = "हमें सार्वजनिक सेवाओं के लिए अधिक राजस्व कमाने की आवश्यकता है।"
 
-  [languages.jp]
-    contentDir = "content/jp"
-    weight = 9
-    languageName = "日本語"
-
-    [languages.jp.params]
-      main = "インフレを解決する循環型経済。"
-      sub = "Pantrypointsは、出会いを介して二国間のポイント制を採用し、インフレを抑制し、完全雇用を可能にし、循環型経済を実現する、レジリエントで破壊的な新しい経済システムです"
-      banner = "/photos/holdhands.jpg"
-      # wow = "Inflation"
-      youtube = "AfByl9Mywi4"
-
-    [languages.jp.params.cta]
-      title = ""
-    [languages.jp.params.cta.buttons.a]
-      link = "/register"
-      text = "Register in the Waitlist"
-      color = ""
-    [languages.jp.params.cta.buttons.b]
-      link = "https://www.superphysics.org/social/economics"
-      text = "Check out the science"
-      color = ""
-
-    [languages.jp.params.tricon2]
-      title = "あなたの役割は何ですか？"
-      sub = "Pantrypointsはみんなのためです"
-
-    [languages.jp.params.tricon2.items.a]
-      link = "/services/build/"
-      img= "/icons/shop.png"
-      title = "私はマイクロ・スモール・ビジネスのオーナーです"
-      sub = "ウェブサイト、Webアプリ、モバイルアプリ、またはソーシャルメディアとしてのオンラインプレゼンスが必要です。"
-    [languages.jp.params.tricon2.items.b]
-      link = "https://circle.pantrypoints.com/"
-      img = "/icons/jobless.png"
-      title = "私は失業中です"
-      sub = "仕事を得る必要がありますが、必要なスキルがありません。"
-    [languages.jp.params.tricon2.items.c]
-      link = "/pantrypreneur/educate"
-      img= "/icons/teacher.png"
-      title = "私は教師です"
-      sub = "学生の出席とパフォーマンスを記録する必要があります"
-    [languages.jp.params.tricon2.items.d]
-      link = "/trisactions/health/"
-      img= "/icons/apple.png"
-      title = "私は健康に気を使っています"
-      sub = "医療は高額なので、正しく食事をする必要があります"
-    [languages.jp.params.tricon2.items.f]
-      link = "/trisactions/invesure/"
-      img= "/icons/investor.png"
-      title = "私は投資家です"
-      sub = "私の投資が経済に多くの影響を与えることを望んでいます"
-    [languages.jp.params.tricon2.items.g]
-      link = "/trisactions/banking"
-      img = "icons/banker.png"
-      title = "私は銀行家です"
-      sub = "銀行危機の解決策が欲しいです。私はとてもストレスを感じています"
-    [languages.jp.params.tricon2.items.h]
-      link = "/pantrypreneur/farm/"
-      img = "/icons/farmer.png"
-      title = "私は農夫です"
-      sub = "地球温暖化の解決策が必要です！"
-    [languages.jp.params.tricon2.items.i]
-      link = "/services/tax"
-      img = "/icons/gov.png"
-      title = "私は政府で働いています"
-      sub = "公共サービスのために収益を増やす必要があります"
-
 
   [languages.es]
     contentDir = "content/es"
@@ -789,24 +733,6 @@ pagerSize = 24
       title = "Trabajo en el Gobierno"
       sub = "Necesitamos obtener más ingresos para los servicios públicos."
 
-    # [languages.es.params.tricon3]
-    #   title = "Locations"
-    #   sub = "Here are the cities where we are prototyping our system. Feel free to add your city by registering in the waitlist."
-    # [languages.es.params.tricon3.items.a]
-    #   img = "/flags/ph.png"
-    #   title = "Las Pinas"
-    # [languages.es.params.tricon3.items.b]
-    #   img = "/flags/ph.png"
-    #   title = "San Pedro Laguna"
-    # [languages.es.params.tricon3.items.c]
-    #   img = "/flags/vn.png"
-    #   title = "Ho Chi Minh"
-    # [languages.es.params.tricon3.items.d]
-    #   img = "/flags/vn.png"
-    #   title = "Hanoi"
-    # [languages.es.params.tricon3.items.e]
-    #   img = "/flags/my.png"
-    #   title = "Kuala Lumpur"
 
     [languages.es.params.inca]
       title = "Originally Built by the Inca"
@@ -822,22 +748,22 @@ pagerSize = 24
       img = "photos/quipu.jpg"
       title = "We implement the Quipu as points, thus Pantrypoints"
 
-    [languages.es.params.how]
-      title = "Cómo funciona"
-      sub = "Publica tu artículo usando un precio en puntos en lugar de un precio en dinero"
-      banner = "/screens/pantryshow.jpg"
-    [languages.es.params.how.steps.a]
-      img = "/photos/qullqa.jpg"
-      title = "Reúnete con los compradores de tu artículo"
-      id = 1
-    [languages.es.params.how.steps.b]
-      img = "/photos/shake.jpg"
-      title = "Meetup with the buyers of your item"
-      id = 2
-    [languages.es.params.how.steps.c]
-      img = "/screens/pay.jpg"
-      title = "Paga con puntos"
-      id = 3
+    # [languages.es.params.how]
+    #   title = "Cómo funciona"
+    #   sub = "Publica tu artículo usando un precio en puntos en lugar de un precio en dinero"
+    #   banner = "/screens/pantryshow.jpg"
+    # [languages.es.params.how.steps.a]
+    #   img = "/photos/qullqa.jpg"
+    #   title = "Reúnete con los compradores de tu artículo"
+    #   id = 1
+    # [languages.es.params.how.steps.b]
+    #   img = "/photos/shake.jpg"
+    #   title = "Meetup with the buyers of your item"
+    #   id = 2
+    # [languages.es.params.how.steps.c]
+    #   img = "/screens/pay.jpg"
+    #   title = "Paga con puntos"
+    #   id = 3
 
 
 
@@ -849,25 +775,6 @@ pagerSize = 24
   
   # Enable search in header
   enableSearch = true
-
-  # Option to customize the search parameters of a page
-  # Below are the supported options; Note that including entire content
-  # may slowdown the loading of search results
-  # Title of page is included by default
-  # searchKeys = [
-  #   "title",
-  #   "link",
-  #   "description"
-  # ]
-  searchKeys = [
-    "tags",
-    "date",
-    "categories",
-    "summary",
-    "content",
-    "link",
-    "author"
-  ]
 
   # Custom copyright - optional
   copyright = "Copyright © 2024 | <a href='/company/'>Pantrypoints Technologies</a> | Based on <a href='https://www.superphysics.org'>Superphysics</a>"
@@ -893,27 +800,6 @@ pagerSize = 24
 
   hidePageThumbnail = false
 
-# Comments system
-[params.comments]
-  system = "giscus"
-
-  repo="jundalisay/superblist"
-  repo-id="R_kgDOKk--Tw"
-  category="General"
-  category-id="DIC_kwDOKk--T84CacDf"
-  mapping="pathname"
-  strict="0"
-  reactions-enabled="1"
-  emit-metadata="0"
-  input-position="bottom"
-  theme="preferred_color_scheme"
-  lang="en"
-  crossorigin="anonymous"
-
-  # Options for utterances, exclude hyphens
-  # repo = ""
-  # issueterm = ""
-  # theme = ""
 
 [params.homepage.social]
   # Global params common for both languages
@@ -939,16 +825,7 @@ pagerSize = 24
 [build]
   writeStats = true
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
 
-# syntax highlight settings
-[markup]
-  [markup.highlight]
-    style = "dracula"
-  [markup.goldmark.renderer]
-    # Enable to include inline HTML
-    unsafe = true
 
 
 [[params.social]]
@@ -999,9 +876,6 @@ pagerSize = 24
   img = "/books/w5.jpg"
   url = "https://play.google.com/store/books/details/Juan_Dalisay_Jr_The_Simple_Wealth_of_Nations_by_Ad?id=WyYAEAAAQBAJ"
 
-
-[build]
-  writeStats = true
 
 # syntax highlight settings
 [markup]

@@ -6,9 +6,6 @@
                 <div class="space-y-8">
                     <div class="space-y-4">
                         <div class="space-y-2">
-                            <span class="rounded-full uppercase bg-cyan-500 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
-                                
-                            </span>
                             <h1 class="text-4xl font-bold tracking-tight dark:text-white text-black sm:text-5xl md:text-6xl">                
                               {{ .Site.Params.main }}
                               {{ with .Site.Params.wow }}
@@ -49,19 +46,70 @@
 </div>
 
 
-  {{ with .Site.Params.req }}
-    {{ partial "req.html" . }}
-  {{ end }}
+    {{ with .Site.Params.quote1 }}
+      {{ range . }}
+        {{ partial "quoter.html" . }}
+      {{ end }}
+    {{ end }}
+
+    <section class="ani max-w-screen-md mx-auto text-center py-16 lg:py-36">
+      <h3 class="text-4xl font-bold tracking-tight text-white dark:text-white">{{ .Site.Params.sub }}</h3>
+
+      <div class="flex justify-center">
+        {{ with .Site.Params.icons }}
+          {{ range . }}
+            {{ partial "icons.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+
+      {{ with .Site.Params.how }}
+        {{ partial "how.html" . }}
+      {{ end }}
+
+    </section>
 
 
-  {{ with .Site.Params.tricon1 }}
-    {{- partial "tricon.html" . -}}
-  {{ end }}
+<section class="bg-white dark:bg-gray-900 py-12 px-6 md:px-12">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+      Originally Built by the Inca
+    </h2>
+    <p class="text-gray-600 dark:text-gray-300 text-lg mb-12">
+      The Inca made a large scale points-based economic system using strings for points.
+      The Spanish destroyed it and replaced it with the current crisis-prone money-based system.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-start">
+    <!-- Qulqa -->
+    <div class="flex flex-col items-center text-center">
+      <!-- Replace below with real Qulqa SVG -->
+      <svg class="w-24 h-24 text-blue-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M3 21h18M4 10l8-8 8 8M4 10v11h16V10"></path>
+      </svg>
+      <p class="text-lg font-medium text-gray-700 dark:text-gray-200">
+        We implement the <span class="font-bold text-blue-600">Qulqa</span> as pantrie
+      </p>
+    </div>
+
+    <!-- Quipu -->
+    <div class="flex flex-col items-center text-center">
+      <!-- Replace below with real Quipu SVG -->
+      <svg class="w-24 h-24 text-yellow-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" stroke-dasharray="4 2"></circle>
+        <line x1="12" y1="2" x2="12" y2="22"></line>
+        <line x1="2" y1="12" x2="22" y2="12"></line>
+      </svg>
+      <p class="text-lg font-medium text-gray-700 dark:text-gray-200">
+        We implement the <span class="font-bold text-yellow-600">Quipu</span> as points, thus <span class="italic">Pantrypoints</span>
+      </p>
+    </div>
+  </div>
+</section>
 
 
-  {{ with .Site.Params.how }}
-    {{ partial "how.html" . }}
-  {{ end }}    
+
 
   {{ with .Site.Params.tricon2 }}
     {{- partial "tricon.html" . -}}
