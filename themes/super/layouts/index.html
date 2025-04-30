@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="w-screen">
-    <div class="mx-auto max-w-7xl py-8 sm:py-4">
+
+    <div class="mx-auto max-w-screen-lg px-4 py-8 sm:py-4">
         <div class="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-12 lg:gap-8">
             <div class="px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
                 <div class="space-y-8">
@@ -17,7 +17,7 @@
                         </div>
 
                         <p class="text-base dark:text-white text-gray-800 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                          {{ .Site.Params.sub }}
+                          {{ .Site.Params.subtitle }}
                         </p>
                     </div>
                     <div class="border-t border-gray-700"></div>
@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-</div>
+
 
 
     {{ with .Site.Params.quote1 }}
@@ -52,8 +52,8 @@
       {{ end }}
     {{ end }}
 
-    <section class="ani max-w-screen-md mx-auto text-center py-16 lg:py-36">
-      <h3 class="text-4xl font-bold tracking-tight text-white dark:text-white">{{ .Site.Params.sub }}</h3>
+    <section class="ani max-w-screen-md mx-auto text-center py-4 lg:py-24">
+      <h3 class="text-4xl font-bold tracking-tight dark:text-gray-200">{{ .Site.Params.intro }}</h3>
 
       <div class="flex justify-center">
         {{ with .Site.Params.icons }}
@@ -70,45 +70,35 @@
     </section>
 
 
-<section class="bg-white dark:bg-gray-900 py-12 px-6 md:px-12">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
-      Originally Built by the Inca
-    </h2>
-    <p class="text-gray-600 dark:text-gray-300 text-lg mb-12">
-      The Inca made a large scale points-based economic system using strings for points.
-      The Spanish destroyed it and replaced it with the current crisis-prone money-based system.
-    </p>
-  </div>
+  {{ with .Site.Params.duo }}
+    <section class="bg-[url(/photos/inca.jpg)] bg-cover bg-center bg-no-repeat py-12 px-6 md:px-12">
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white dark:text-white mb-4">
+          {{ .title }}
+        </h2>
+        <p class="text-gray-100 dark:text-gray-100 text-lg">
+          {{ .sub }}
+        </p>
+        <a href="{{ .url }}">
+          <button type="button" class="{{ .color }} inline-flex shadow-lg items-center px-4 py-2 text-sm font-medium rounded-lg inline-block dark:bg-secondary-100 dark:hover:bg-neutral-700 hover:bg-gray-100 m-2 text-gray-900" style="">
+            {{ .text }}
+          </button>
+        </a>
+      </div>
 
-  <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-start">
-    <!-- Qulqa -->
-    <div class="flex flex-col items-center text-center">
-      <!-- Replace below with real Qulqa SVG -->
-      <svg class="w-24 h-24 text-blue-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M3 21h18M4 10l8-8 8 8M4 10v11h16V10"></path>
-      </svg>
-      <p class="text-lg font-medium text-gray-700 dark:text-gray-200">
-        We implement the <span class="font-bold text-blue-600">Qulqa</span> as pantrie
-      </p>
-    </div>
+      <div class="flex items-center text-center max-w-screen-md mx-auto">
+        {{ range .cards }}
+          <div class="relative">
+            <img class="ani object-contain rounded-lg shadow-lg w-full h-auto p-1" src="{{ .img | absURL }}" loading="lazy" alt="Image">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent rounded-lg"></div>
+            <p class="absolute bottom-4 left-4 text-white text-lg font-medium drop-shadow-md">{{ .title }}</p>
+           </div>
+        {{ end }}
+      </div>
 
-    <!-- Quipu -->
-    <div class="flex flex-col items-center text-center">
-      <!-- Replace below with real Quipu SVG -->
-      <svg class="w-24 h-24 text-yellow-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" stroke-dasharray="4 2"></circle>
-        <line x1="12" y1="2" x2="12" y2="22"></line>
-        <line x1="2" y1="12" x2="22" y2="12"></line>
-      </svg>
-      <p class="text-lg font-medium text-gray-700 dark:text-gray-200">
-        We implement the <span class="font-bold text-yellow-600">Quipu</span> as points, thus <span class="italic">Pantrypoints</span>
-      </p>
-    </div>
-  </div>
-</section>
+    </section>
 
-
+  {{ end }}
 
 
   {{ with .Site.Params.tricon2 }}
@@ -119,14 +109,5 @@
     {{- partial "flags.html" . -}}
   {{ end }}
 
-  {{ with .Site.Params.inca }}
-    {{- partial "triconb.html" . -}}
-  {{ end }}
-
-  {{ with .Site.Params.feedback }}
-    {{ partial "feedback.html" . }}
-  {{ end }}
-
-  {{- partial "social.html" . -}}
 
 {{- end }}
