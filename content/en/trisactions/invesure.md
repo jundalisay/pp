@@ -7,10 +7,10 @@ youtube: smeI8NEBJ4k
 feat: true
 
 
-trimg:
+bannericon:
   banner: "/photos/shake.jpg"
-  title : "Everyone an entrepreneur"
-  items:
+  intro : "Everyone an entrepreneur"
+  cards:
     - title: "For the Poor"
       img: /icons/banker.png
       sub: "Get investments in kind without any bank account"

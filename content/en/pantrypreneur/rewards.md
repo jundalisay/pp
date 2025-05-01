@@ -1,7 +1,7 @@
 ---
 linkTitle: Rewards
 title: Rewards
-wow: "for Loyalty"
+wow: "Loyalty based on Points"
 image: /og/rewards.jpg
 description: "Pantrypreneur Rewards gives incentives to frequent purchases to keep the economy going"
 youtube: 8dUlVl-ApdM
@@ -10,13 +10,12 @@ feat: true
 # req:
 #   title: Based on the requirements in Book 2, Chapter 3 of the Wealth of Nations
 #   link: "https://superphysics.org/research/smith/wealth-of-nations/book-2/chapter-3a"
-#   avatar: "/avatars/smith.png"
 
 
-triconb:
+banner:
   banner: "/photos/shake.jpg"
-  title : "Incentivize Loyal Behavior"
-  items:
+  intro : "Incentivize Loyal Behavior"
+  cards:
     - title: "For Consumers"
       img: /icons/appraise.png
       sub: "Get free or discounted items for repeat purchases"            

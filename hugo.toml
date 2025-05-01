@@ -113,12 +113,20 @@ pagerSize = 24
       wow = "Inflation"
       youtube = "AfByl9Mywi4"
 
+    [languages.en.params.trio]  # <-- Single brackets define a table
+      intro = "Presenting: Trisactions"
+      subintro = "Trisactions allow money, moneyless, or metaverse transactions without waiting for fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"    
+      cards = [
+        { img = "/icons/moneyno.png", title = "1: Moneyless", sub = "Moneyless transactions use barter-credits measured in points which are pegged to grains", link = "/trisactions/invesure/" },
+        { img = "/icons/money.png", title = "2: Money", sub = "'Money points' allow money to pay for the moneyless transactions via cash or cashless apps of the fiat economy", link = "/trisactions/banking" },
+        { img = "/icons/eth.png", title = "3: Metaverse", sub = "The points can be converted to crypto as 'crypto-easing' (our alternative to quantitative easing) to reduce the impact of blockchain on global warming", link = "/services/coins/" }        # Add more steps as needed
+      ]
+
     [languages.en.params.cta]
       buttons = [
         { url = "/register", text = "Register in the Waitlist", color = "" },
         { url = "https://www.superphysics.org/social/economics", text = "Check out the science", color = "bg-blue-800 dark:bg-blue-200" }
       ]
-
 
     [[languages.en.params.quote1]]
       content = "Among the Mongols who are ignorant of the use of money, cattle are the measures of value. Wealth to them consisted in cattle, as to the Spaniards it consisted in gold and silver. Of the two, the Mongol notion, was nearest to the truth."
@@ -126,57 +134,9 @@ pagerSize = 24
       author = "Adam Smith"
       src = "The Wealth of Nations"
 
-    [[languages.en.params.icons]]
-      icon = "/icons/moneyno.png"
-      title = "1: Moneyless"
-      sub = "Moneyless transactions use barter-credits measured in points which are pegged to grains"
-      link = "/trisactions/invesure/"
-    [[languages.en.params.icons]]
-      link = "/trisactions/banking"
-      icon = "/icons/money.png"
-      title = "2: Money"
-      sub = "'Money points' allow money to pay for the moneyless transactions via cash or cashless apps of the fiat economy"
-    [[languages.en.params.icons]]
-      link = "/services/coins/"
-      icon = "/icons/eth.png"
-      title = "3: Metaverse"
-      sub = "The points can be converted to crypto as 'crypto-easing' (our alternative to quantitative easing) to reduce the impact of blockchain on global warming"
-
-
     [languages.en.params.tricon1]
       title = "Introducing Asynchronous Tri-sactions"
       sub = "Trisactions allow money, moneyless, or metaverse transactions without waiting for fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"    
-
-    [languages.en.params.feedback]
-      title = "What Experts Say"
-    [languages.en.params.feedback.items.a]
-      img = "/avatars/dhanjoo.jpg"
-      sub = "Prof. Dhanjoo Ghista, University 2020 Foundation President"
-      title = "I very much like this work: A Research Proposal For The Formalization Of The Science Of Supereconomics And The Establishment Of A Points-Based Economic System"
-      link = "http://www.dhanjooghista.com/"
-    [languages.en.params.feedback.items.b]
-      img = "/avatars/gavin.jpg"
-      title = "I believe it is developing into a worthwhile project"
-      sub = "Prof. Gavin Kennedy, a world expert on Adam Smith"
-      link = "http://adamsmithslostlegacy.blogspot.com"
-
-
-    [languages.en.params.tricon3]
-      title = "Locations"
-      sub = "Here are the cities where we are prototyping our system. Feel free to add your city by registering in the waitlist."
-    [languages.en.params.tricon3.items.a]
-      img = "/flags/ph.png"
-      title = "Las Pinas"
-    [languages.en.params.tricon3.items.b]
-      img = "/flags/vn.png"
-      title = "Ho Chi Minh"
-    [languages.en.params.tricon3.items.c]
-      img = "/flags/bt.png"
-      title = "Thimpu"
-    [languages.en.params.tricon3.items.d]
-      img = "/flags/pk.jpg"
-      title = "Peshawar"
-
 
     [languages.en.params.inca]
       title = "Originally Built by the Inca"
@@ -184,14 +144,6 @@ pagerSize = 24
       banner = "/photos/inca.jpg"
       link = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-5872764"
       linktext = "Read how the Inca system worked"
-
-    [languages.en.params.inca.items.a]
-      img = "/photos/qullqa.jpg"
-      title = "We implement the Qulqa as pantries"
-    [languages.en.params.inca.items.b]
-      img = "photos/quipu.jpg"
-      title = "We implement the Quipu as points, thus Pantrypoints"
-
 
     [languages.en.params.how]  # <-- Single brackets define a table
       title = "How It Works"
@@ -208,14 +160,15 @@ pagerSize = 24
       text = "Read how the Inca system worked"
       url = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-1198541254"
       banner = "/photos/inca.jpg"
+      color = "bg-gradient-to-r from-blue-400 to-green-800 dark:bg-blue-800 text-white dark:text-white"
       cards = [
         { img = "/photos/qullqa.jpg", title = "We implement the qulqa as pantries"},
         { img = "/photos/quipu.jpg", title = "We implement the quipu as points, thus Pantrypoints"},
       ]
 
-    [languages.en.params.cards]
-      title = "Which Are You?"
-      sub = "Pantrypoints is for everyone"
+    [languages.en.params.uses]
+      intro = "Which Are You?"
+      subintro = "Pantrypoints is for everyone"
       cards = [
         { url = "/services/build/", img = "/icons/shop.png", title = "I'm a micro-small business owner", sub = "I need online presence as a website, web app, mobile app, or social media" },
         { url = "https://circle.pantrypoints.com/", img = "/icons/jobless.png", title = "I'm Unemployed", sub = "I need to get a job but don't have the required skills" },
@@ -227,8 +180,25 @@ pagerSize = 24
         { url = "/services/tax", img = "/icons/gov.png", title = "I'm with the Government", sub = "We need to earn more revenue for public services" }
       ]
 
+    [languages.en.params.locations]
+      intro = "Locations"
+      subintro = "Here are the cities where we are prototyping our system. Feel free to add your city by registering in the waitlist."
+      cards = [
+        { img = "/flags/ph.png", url = "/", title = "Las Pinas" },
+        { img = "/flags/vn.png", url = "/", title = "Ho Chi Minh" },
+        { img = "/flags/bt.png", url = "/", title = "Thimpu" },
+        { img = "/flags/pk.png", url = "/", title = "Peshawar" },
+      ]
+
+    [languages.en.params.testi]
+      intro = "What Experts Say"
+      cards = [
+        { img = "/avatars/dhanjoo.jpg", sub = "Prof. Dhanjoo Ghista, University 2020 Foundation President", title = "I very much like this work: A Research Proposal For The Formalization Of The Science Of Supereconomics And The Establishment Of A Points-Based Economic System", link = "http://www.dhanjooghista.com/" },
+        { img = "/avatars/gavin.jpg", sub = "Prof. Gavin Kennedy, a world expert on Adam Smith", title = "I believe it is developing into a worthwhile project", link = "http://adamsmithslostlegacy.blogspot.com"}
+      ]
 
 
+     
   [languages.zh]
     flag = "/flags/cn.png"
     contentDir = "content/zh"

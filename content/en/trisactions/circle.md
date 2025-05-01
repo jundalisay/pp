@@ -6,18 +6,19 @@ description: "Pantrypoints Circle implements Urban Subsistence Farming and Food 
 youtube: HFqltUWhzfE
 mobile: true
 
+quote:
+  content: "No society can surely be flourishing and happy, of which the far greater part of the members are poor and miserable. It is but equity, besides, that they who feed, clothe, and lodge the whole body of the people, should have such a share of the produce of their own labour as to be themselves tolerably well fed, clothed, and lodged"
+  icon: "Adam Smith"
+  author: "Adam Smith"
+  src: "The Wealth of Nations, Book 1"
+  # url: "https://www.superphysics.org/research/smith/wealth-of-nations/book-2/chapter-2"
 
-req:
-  title: Based on the requirements in Book 1, Chapter 8 of the Wealth of Nations
-  link: "https://superphysics.org/research/smith/wealth-of-nations/book-1/chapter-8d"
-  avatar: "/avatars/smith.png"
 
-
-triconb:
+bannericon:
   banner: "/photos/yay.jpg"
   title : "No Money? No Job? No Problem!"
   sub: "Pantry Circle will help the unemployed and unbanked get access to food through their local community"
-  items:
+  cards:
     - title: "For the Unemployed"
       img: /icons/jobless.png
       sub: "Avoid hunger by doing something useful for your community"      
@@ -33,8 +34,6 @@ triconb:
     - title: "For Government"
       img: /icons/gov.png
       sub: "Provide welfare for the poor at a much lower cost and get updated data quickly"
-
-
 
 how:
   title : "How it Works"  
@@ -59,7 +58,6 @@ how:
 #     - name: "What Goes Around Comes Around"
 #       img: "/img/idea.jpg"
 #       sub: "The transactions in Pantrypoints Circle creates a 'social memory' where the system points out the help done by users in the past"
-
       
 # segment:
 #   articles:
@@ -72,14 +70,11 @@ how:
 #       sub: "The Basic Universal Revenue of Pantrynomics is the moneyless version of Universal Basic Income of Economics. Its ancient version is the quipu string used by the Inca"
 #       # button:
 #       #   label : "Can it solve poverty & inequality?"
-#       #   link : "https://superphysics.org/pantrynomics/basic-universal-revenue"
-
-
-
+#       #   link : "https://superphysics.org/pantrynomics/basic-universal-revenue
 
 feedback:
-  title: Competitions
-  items:
+  intro: Competitions
+  cards:
     - sub: AWS Hackdays 2019
       img: /icons/hackdays.jpg
       title: Top 5
@@ -91,8 +86,8 @@ feedback:
 
 
 feedback2:
-  title: Feedback
-  items:
+  intro: Feedback
+  cards:
     - sub : giverrang.com
       img: /icons/giverrang.png
       title: Nice work. This is a BIG topic, super important and love that you're tackling it. I'm on the same wavelength.
@@ -107,8 +102,8 @@ feedback2:
 cta:
   buttons:
     - text: "Try the app"
-      link: "https://play.google.com/store/apps/details?id=com.pantrypoints.circle&pli=1"
+      url: "https://play.google.com/store/apps/details?id=com.pantrypoints.circle&pli=1"
     - text: "View the results"
-      link : "https://circle.pantrypoints.com/"
+      url : "https://circle.pantrypoints.com/"
 
 ---

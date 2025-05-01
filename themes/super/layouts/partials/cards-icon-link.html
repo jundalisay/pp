@@ -1,0 +1,24 @@
+<div class="mx-auto text-center max-w-screen-lg px-4 lg:py-16 py-8">
+
+    <h3 class="text-4xl font-bold tracking-tight dark:text-gray-200">{{ .intro }}</h3>
+    {{ with .subintro }}
+      <p class="text-lg dark:text-gray-200">{{ . }}</p>
+    {{ end }}
+
+    <div class="flex flex-wrap justify-center">
+      {{ range .cards }}
+
+        <a href="{{ .url }}" style="transition: transform 0.3s ease-in-out;" class="zoom text-center mx-auto hover:scale-110 overflow-hidden ani p-4 max-w-sm">
+
+          <img class="mx-auto px-4" src="{{ .img }}" height="100px" width="100px" alt="Icon" />
+          <div class="p-4">
+            <h5 class="text-lg font-bold tracking-tight dark:text-gray-200 ">{{ .title }}</h5>
+            <p class="mb-3 dark:text-gray-100 text-gray-600 text-sm">{{ .sub }}</p>
+          </div>      
+        </a>
+
+      {{ end }}
+    </div>
+
+</div>
+

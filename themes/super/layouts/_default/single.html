@@ -1,26 +1,62 @@
 {{ define "main" }}
 
+{{ if or (eq .Section "services") (eq .Section "trisactions") (eq .Section "pantrypreneur") }}
+
+  {{ partial "jumbotron.html" . }}
+
+  {{ with .Params.quote }}
+    {{ partial "quoter.html" . }}
+  {{ end }}
+
+  {{ with .Params.cards }}
+    {{ partial "cards.html" . }}
+  {{ end }}
+
+  {{ with .Params.cards2 }}
+    {{ partial "cards.html" . }}
+  {{ end }}
+
+  {{ with .Params.how }}
+    {{ partial "how.html" . }}
+  {{ end }}  
+
+  {{ with .Params.banner }}
+    {{ partial "banner.html" . }}
+  {{ end }}
+
+  {{ with .Params.bannericon }}
+    {{ partial "banner-icon.html" . }}
+  {{ end }}
+
+  {{ with .Params.cards3 }}
+    {{ partial "cards-icon-link.html" . }}
+  {{ end }}
+
+  {{ with .Params.feedback }}
+    {{ partial "profiles.html" . }}
+  {{ end }}
+
+  {{ with .Params.feedback2 }}
+    {{ partial "profiles.html" . }}
+  {{ end }}
+ 
+
+{{ else }}
+
 
   <article class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-5 gap-8">
 
-    <div class="md:col-span-1">
-      <!-- horiz -->
+    <div class="md:col-span-1"></div>
 
 
-
-
-    <!-- <article class="max-w-5xl mx-auto px-4 py-6"> -->
     <!-- Breadcrumbs -->
-
     <div class="md:col-span-3">
-
       {{ partial "bread.html" . }}
 
       <!-- Header -->
-
-        {{ with .Params.heading }}          
-          <small class="py-2" style="text-transform: uppercase">{{ . }}</small>
-        {{- end }}
+      {{ with .Params.heading }}          
+        <small class="py-2" style="text-transform: uppercase">{{ . }}</small>
+      {{- end }}
 
         
       <div class="flex items-start justify-between">
@@ -141,5 +177,6 @@
 
 </article>
 
+{{ end }}
 
 {{ end }}

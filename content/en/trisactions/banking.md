@@ -7,18 +7,26 @@ image: "/graphics/banking.jpg"
 youtube: 6b9R04CgS6w
 feat: true
 
+cta:
+  buttons:
+    - text: "Register in the Waitlist!"
+      url: "/register"
+    - text: "I need to know more"
+      url : "https://superphysics.org/social/economics/solutions/points-banking"
 
-req:
-  title: Based on the requirements in the Wealth of Nations
-  link: "https://superphysics.org/research/smith/wealth-of-nations/book-2/chapter-3c"
-  avatar: "/avatars/smith.png"
+quote:
+  content: "The late multiplication of banking companies in both parts of the United Kingdom, an event by which many people have been much alarmed, instead of diminishing, increases the security of the public."
+  icon: "Adam Smith"
+  author: "Adam Smith"
+  src: "The Wealth of Nations, Book 2, Chapter 2"
+  url: "https://www.superphysics.org/research/smith/wealth-of-nations/book-2/chapter-2"
 
 
-triconb:
+bannericon:
   banner: "/photos/inca.jpg"
   title: "Inspired by the Moneyless, Paperless system of the Inca"
   sub: "Points-banking allows the regulated transfer of points between users"
-  items:
+  cards:
     - title: "Moneyless Ok!"
       img: /icons/moneyno.png
       sub: "Points Banking allows economies to work even after a total financial collapse"
@@ -53,10 +61,9 @@ how:
       title: "Use your points as usual"
 
 
-
 feedback:
-  title: Awards
-  items:
+  intro: Awards
+  cards:
     - sub : Startup Weekend Cambodia 2017
       img: https://sorasystem.sirv.com/logos/startupweekend.png
       title: Top 5 in the Fintech Edition as Debt Clearing System
@@ -65,13 +72,5 @@ feedback:
       img: https://sorasystem.sirv.com/logos/blockathon.jpg
       title: 2nd Place as Social ROSCA
       # link: http://blockchainlabs.asia
-
-
-cta:
-  buttons:
-    - text: "Register in the Waitlist!"
-      link: "/register"
-    - text: "I need to know more"
-      link : "https://superphysics.org/social/economics/solutions/points-banking"
 
 ---

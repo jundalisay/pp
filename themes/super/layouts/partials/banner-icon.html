@@ -1,0 +1,44 @@
+<section class="bg-[url({{ .banner }})] bg-cover max-w-screen-xl bg-center bg-no-repeat py-12 px-6 md:px-12">
+  <div class="max-w-xl mx-auto text-center mb-12 p-4 bg-white dark:bg-gray-800 opacity-25 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-bold dark:text-gray-200 mb-4">
+      {{ .title }}
+    </h2>
+    <p class="dark:text-gray-100 leading-tight pb-2">
+      {{ .sub }}
+    </p>
+
+    <a href="{{ .url }}">
+      <button type="button" class="
+        inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg
+        m-2
+        shadow-lg
+        text-white /* Set text color that contrasts with gradient */
+        bg-gradient-to-r from-cyan-500 to-blue-500 /* Base gradient */
+        hover:from-cyan-600 hover:to-blue-600 /* Gradient change on hover */
+        hover:shadow-xl /* Optional: Enhance shadow on hover */
+        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 /* Focus state */
+        transition duration-300 ease-in-out /* Smooth transition for hover */
+        transform hover:-translate-y-0.5 /* Optional: Subtle lift on hover */
+        dark:from-cyan-600 dark:to-blue-600 /* Optional: Slightly different base for dark */
+        dark:hover:from-cyan-700 dark:hover:to-blue-700 /* Optional: Dark mode hover */
+      ">
+        {{ .text }}
+      </button>
+    </a>
+  </div>
+
+<div class="flex flex-wrap items-center text-center max-w-screen-xl mx-auto">
+  {{ range .cards }}
+    <div class="p-4 mx-auto text-center max-w-sm bg-white dark:bg-gray-800 opacity-25 m-4 rounded-lg shadow-lg aspect-w-1 aspect-h-1">
+      <div class="flex items-center justify-center h-full">
+        <img class="max-h-full max-w-full object-contain px-4" height="100px" width="100px" src="{{ .img }}" alt="Icon" />
+      </div>
+      <div class="p-4">
+        <h5 class="text-lg font-bold tracking-tight dark:text-gray-200 ">{{ .title }}</h5>
+        <p class="mb-3 dark:text-gray-100 leading-tight text-gray-600 text-sm">{{ .sub }}</p>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+</section>
