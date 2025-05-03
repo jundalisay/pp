@@ -3,7 +3,7 @@ title: "Pantrypoints World"
 wow: "Free Trade System"
 image: /graphics/world.jpg
 description: "Pantrypoints World is an import-export platform that allows local currency or barter"
-youtube: LsWUjsr0paA
+youtube: 25UmGDzactk
 web: true
 
 quote:
@@ -15,7 +15,7 @@ quote:
 
 
 bannericon:
-  img: "/photos/shake.jpg"  
+  banner: "/photos/shake.jpg"  
   title : "Free Trade at Your Fingertips"
   sub: "Free trade is the freedom to trade anything for anything"
   cards:

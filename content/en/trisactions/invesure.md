@@ -9,7 +9,8 @@ feat: true
 
 bannericon:
   banner: "/photos/shake.jpg"
-  intro : "Everyone an entrepreneur"
+  title: "Everyone an entrepreneur"
+  sub: "Invesure allows everyone to address the needs of others"
   cards:
     - title: "For the Poor"
       img: /icons/banker.png

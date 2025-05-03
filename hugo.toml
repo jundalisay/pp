@@ -134,17 +134,6 @@ pagerSize = 24
       author = "Adam Smith"
       src = "The Wealth of Nations"
 
-    [languages.en.params.tricon1]
-      title = "Introducing Asynchronous Tri-sactions"
-      sub = "Trisactions allow money, moneyless, or metaverse transactions without waiting for fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"    
-
-    [languages.en.params.inca]
-      title = "Originally Built by the Inca"
-      sub = "The Inca made a large scale points-based economic system using strings for points. The Spanish destroyed it and replaced it with the current crisis-prone money-based system."
-      banner = "/photos/inca.jpg"
-      link = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-5872764"
-      linktext = "Read how the Inca system worked"
-
     [languages.en.params.how]  # <-- Single brackets define a table
       title = "How It Works"
       steps = [
@@ -160,11 +149,13 @@ pagerSize = 24
       text = "Read how the Inca system worked"
       url = "https://gizmodo.com/the-greatest-mystery-of-the-inca-empire-was-its-strange-1198541254"
       banner = "/photos/inca.jpg"
-      color = "bg-gradient-to-r from-blue-400 to-green-800 dark:bg-blue-800 text-white dark:text-white"
+      color = "bg-gradient-to-r from-blue-400 to-green-800 dark:bg-blue-800 hover:bg-green text-white dark:text-white hover:from-cyan-600 hover:to-blue-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition duration-300 ease-in-out transform hover:-translate-y-0.5 dark:from-cyan-600 dark:to-blue-600 dark:hover:from-cyan-700 dark:hover:to-blue-700"
       cards = [
         { img = "/photos/qullqa.jpg", title = "We implement the qulqa as pantries"},
         { img = "/photos/quipu.jpg", title = "We implement the quipu as points, thus Pantrypoints"},
       ]
+
+
 
     [languages.en.params.uses]
       intro = "Which Are You?"
@@ -191,7 +182,7 @@ pagerSize = 24
       ]
 
     [languages.en.params.testi]
-      intro = "What Experts Say"
+      intro = "What the Experts Say"
       cards = [
         { img = "/avatars/dhanjoo.jpg", sub = "Prof. Dhanjoo Ghista, University 2020 Foundation President", title = "I very much like this work: A Research Proposal For The Formalization Of The Science Of Supereconomics And The Establishment Of A Points-Based Economic System", link = "http://www.dhanjooghista.com/" },
         { img = "/avatars/gavin.jpg", sub = "Prof. Gavin Kennedy, a world expert on Adam Smith", title = "I believe it is developing into a worthwhile project", link = "http://adamsmithslostlegacy.blogspot.com"}

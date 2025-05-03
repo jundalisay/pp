@@ -41,7 +41,7 @@ cards2:
       img : /icons/appraise.png
       sub : "A basic performance appraisal system for your employees"
     - title : "Jobs"
-      icom : /icons/jobs.png
+      img : /icons/jobs.png
       sub : "A job application platform for your company"
     - title : "Klock"
       img : /icons/clock.png
