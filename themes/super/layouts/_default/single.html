@@ -1,11 +1,16 @@
 {{ define "main" }}
 
-{{ if or (eq .Section "services") (eq .Section "trisactions") (eq .Section "pantrypreneur") }}
+{{ $allowedSections := slice "services" "trisactions" "pantrypreneur" "company" }}
+{{ if in $allowedSections .Section }}
 
   {{ partial "jumbotron.html" . }}
 
   {{ with .Params.quote }}
     {{ partial "quoter.html" . }}
+  {{ end }}
+
+  {{ with .Params.time }}
+    {{ partial "timeline.html" . }}
   {{ end }}
 
   {{ with .Params.cards }}

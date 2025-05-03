@@ -2,6 +2,7 @@
 title: Astro Syntax
 slug: astro-syntax
 description: An intro to the .astro component syntax.
+draft: true
 category:
   - One
 tags:

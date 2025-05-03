@@ -3,7 +3,7 @@ urlTitle: Farm
 title: "Pantrypreneur Farm"
 wow: Maximized Farming
 description: "Pantrypreneur Farm is a crop monitoring tool for a 'Maximum Farm'"
-youtube: blkb6Y_veTs 
+youtube: IEtb6uxtk38
 image: /graphics/farm.jpg
 mobile: true
 aliases:
@@ -11,7 +11,7 @@ aliases:
 
 
 quote:
-  content: "..."
+  content: "Our system of integrated farming is designed to utilize every inch of land. The surface, the sub-surface and the space above the surface is to be used 100%."
   icon: "PR Sarkar"
   author: "PR Sarkar"
   src: "Ideal Farming"

@@ -1,7 +1,7 @@
-<div class="ani hover:bg-sky-200 dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow-lg transition-shadow duration-200">
-  <a href="{{ .Permalink }}">
+<a href="{{ .Permalink }}">
+  <div style="transition: transform 0.3s ease-in-out;" class="ani hover:scale-110 dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow-lg transition-shadow duration-200">
     <div class="aspect-[16/9] w-full overflow-hidden">
-      <img style="transition: transform 0.3s ease-in-out;" loading="lazy" src="{{ .Params.image | relURL }}" alt="{{ $.Title }}" class="w-full h-full object-cover hover:scale-110">
+      <img loading="lazy" src="{{ .Params.image | relURL }}" alt="{{ $.Title }}" class="w-full h-full object-cover">
     </div>
     <div class="p-4">
       <p class="text-sm leading-3 text-gray-800 dark:text-gray-200 pb-2">{{ .Params.heading }}</p>
@@ -14,5 +14,5 @@
           </div>
         {{- end }}
     </div>
-  </a>
-</div>
+  </div>
+</a>

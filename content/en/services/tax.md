@@ -1,7 +1,7 @@
 ---
 linkTitle: Tax
 title: "Points Taxation"
-# wow: 
+wow: Moneyless Taxation
 description: "Pantrypoints Tax is our implementation of Adam Smith's taxation system described in The Wealth of Nations, designed to make governments wealthy while being easy on the people"
 youtube: "HOtK8qR7LYI"
 image: /og/tax.jpg
@@ -12,22 +12,22 @@ feat: true
 cta:
   buttons:
     - text: "Register in the Waitlist"
-      link: "/register"
+      url: "/register"
     - text: "Read the solution"
-      link : "/docs/supereconomics/pointtax/"
+      url : "/docs/supereconomics/pointtax/"
 
 
-req:
-  title: 'All nations have endeavoured, to the best of their judgment, to render their taxes as equal, certain, convenient as possible. Historical taxes will show that these endeavours were not equally successful'
-  link: "https://superphysics.org/research/smith/wealth-of-nations/book-5/chapter-2/part-2a-tax-maxims"
-  avatar: "/avatars/smith.png"
+quote:
+  content: 'All nations have endeavoured, to the best of their judgment, to render their taxes as equal, certain, convenient as possible. Historical taxes will show that these endeavours were not equally successful'
+  url: "https://superphysics.org/research/smith/wealth-of-nations/book-5/chapter-2/part-2a-tax-maxims"
+  author: "Adam Smith"
 
 
-
-trimg:
+bannericon:
   image: "/photos/taxes.jpg"
   title : "Only 3 tax classes"
-  items:
+  sub: "Based on The Wealth of Nations"
+  cards:
     - title : "Taxes on fixed capital"
       img: /icons/shop.png
       sub : "These include rent taxes: immovables, estate taxes, corporate income, dividends, percentage tax. The rent taxes counteract the natural idleness from wage taxes"
@@ -39,7 +39,6 @@ trimg:
       sub : "Wage and Payroll taxes. Wage taxes counteract the natural oligarchy tendency from profit taxes"
 
   
-
 how:
   title : "How it Works"
   steps:

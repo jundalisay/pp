@@ -1,18 +1,18 @@
 ---
 linkTitle: Cards
 title: "Point Cards"
-# wow: Offline Use
+wow: Points Cards Offline Use
 description: "Pantrypoints Cards are the offline bardit system that combines barter and credit"
 youtube: ZErxZt4V2t4
 image: /graphics/cards.jpg
 offline: true
 
 
-triconb:
+bannericon:
   banner: "/photos/holdhands.jpg" 
   title: "Bardit = Barter + Credit"
   sub: "Bardit allows any 2 parties to create value"
-  items:
+  cards:
     - title: "Moneyless"
       sub: Money is not essential nor critical to Points Cards
       img: /icons/moneyno.png
@@ -51,6 +51,6 @@ cta:
   buttons:
     - text: "Order Point Cards"
       color: bg-blue-100
-      link: "/contact"
+      url: "/contact"
 
 ---

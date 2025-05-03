@@ -6,9 +6,9 @@
     <p class="leading-tight dark:text-gray-200 py-4">{{ . }}</p>
   {{ end }}
 
-  <div class="flex justify-center">
+  <div class="flex flex-wrap justify-center">
     {{ range .cards }}
-      <div class="p-4 mx-auto text-center">
+      <div class="p-4 max-w-sm mx-auto text-center">
         <img class="mx-auto px-4" src="{{ .img }}" height="100px" width="100px" alt="Icon" />
         <div class="p-4">
           <h5 class="text-2xl font-bold tracking-tight dark:text-gray-200 ">{{ .title }}</h5>

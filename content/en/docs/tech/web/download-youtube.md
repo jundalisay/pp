@@ -1,8 +1,7 @@
 ---
 title: "How to Download Youtube Videos"
-# subtitle: "modify the URL"
 date: 2023-11-25
-image: "/photos/code.jpg"
+c: "darkslategray"
 description : "How to Download Youtube Videos"
 author: Juan
 ---

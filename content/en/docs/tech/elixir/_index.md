@@ -3,7 +3,7 @@ title: "Elixir"
 # subtitle: Tech
 image: "/graphics/elixir.jpg"
 description: "Articles on Elixir"
-weight: 55
+weight: 26
 ---
 
 

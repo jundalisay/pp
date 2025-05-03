@@ -83,6 +83,12 @@ pagerSize = 24
       weight = 2
 
     [[languages.en.menu.main]]
+      identifier = "services"
+      name = "Services"
+      url = "/services/"
+      weight = 5
+
+    [[languages.en.menu.main]]
         name = "Docs"
         url = "/docs/"
         weight = 22
@@ -99,7 +105,7 @@ pagerSize = 24
 
     [[languages.en.menu.main]]
         name = "About"
-        url = "company"
+        url = "/services/company"
         weight = 28
 
 
@@ -155,8 +161,6 @@ pagerSize = 24
         { img = "/photos/quipu.jpg", title = "We implement the quipu as points, thus Pantrypoints"},
       ]
 
-
-
     [languages.en.params.uses]
       intro = "Which Are You?"
       subintro = "Pantrypoints is for everyone"
@@ -191,7 +195,6 @@ pagerSize = 24
 
      
   [languages.zh]
-    flag = "/flags/cn.png"
     contentDir = "content/zh"
     weight = 3
     languageName = "简体中"
@@ -209,6 +212,7 @@ pagerSize = 24
         weight = 8
 
     [languages.zh.params]
+      flag = "/flags/cn.png"
       main = "解决通货膨胀的"
       sub = "Pantrypoints是一个弹性的新经济体系，通过会面使用双边积分来制止通货膨胀，实现充分就业和实现循环经济"
       banner = "/photos/holdhands.jpg"
@@ -321,12 +325,12 @@ pagerSize = 24
 
 
   [languages.fr]
-    flag = "/flags/fr.png"
     contentDir = "content/fr"
     weight = 5
     languageName = "Français"
 
     [languages.fr.params]
+      flag = "/flags/gb.png"
       main = "L'économie circulaire qui résout"
       sub = "Pantrypoints est un nouveau système économique résilient et disruptif qui utilise des points bilatéraux lors de rencontres afin de stopper l'inflation, permettre le plein emploi et réaliser l'économie circulaire"
       banner = "/photos/holdhands.jpg"
@@ -396,6 +400,7 @@ pagerSize = 24
     languageName = "Hindi"
 
     [languages.hi.params]
+      flag = "/flags/in.png"
       main = " मुद्रास्फीति का समाधान करने वाली परिपत्र अर्थव्यवस्था।"
       sub = "पैंट्रीपॉइंट्स एक लचीला और व्यवस्था को बदलने वाला नया आर्थिक सिस्टम है जो मुद्रास्फीति को रोकने, पूर्ण रोजगार की अनुमति देने और परिपत्र अर्थव्यवस्था को साकार करने के लिए मिलनसारों के माध्यम से द्विपक्षीय बिंदुओं का उपयोग करता है।"
       banner = "/photos/holdhands.jpg"
@@ -473,6 +478,7 @@ pagerSize = 24
         url = "faq"
         weight = 8
     [languages.es.params]
+      flag = "/flags/es.png"
       main = "La Economía Circular que Resuelve "
       sub = "Pantrypoints es un nuevo sistema económico resiliente que utiliza puntos bilaterales a través de reuniones para detener la inflación, permitir el pleno empleo y lograr la economía circular"
       banner = "/photos/holdhands.jpg"

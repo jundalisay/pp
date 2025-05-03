@@ -1,8 +1,7 @@
 ---
 title: "How to Hotlink Images from Google Drive and Dropbox"
-# subtitle: "modify the URL"
 date: 2020-07-05
-image: "/photos/code.jpg"
+c: "darkslategray"
 description : "How to Hotlink Images from Google Drive and Dropbox"
 author: Juan
 aliases:

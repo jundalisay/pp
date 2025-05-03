@@ -27,7 +27,8 @@ Name | Peso per GB | Peso per Day
 **Mobile Data Sachet 20**: 20 pesos for 2GB @ 3 days | 10 | 6.66
 **4G Wifi 480**: 480 pesos for 50GB @ 30 days | 9.6 (10.4*) | 16 (17.3*)
 
-> *Add 208.33 pesos for 5G and 40.83 pesos to 4G representing the cost of the router over 24 months or 2 years which is 4,990 and 980 pesos respectively
+
+{{< n n="Add 208.33 pesos for 5G and 40.83 pesos to 4G representing the cost of the router over 24 months or 2 years which is 4,990 and 980 pesos respectively" >}}
 
 
 - 5G wifi Unlimited is the best value per GB, but also has the most cash expense.
@@ -52,9 +53,6 @@ Name | Peso per Day
 798.33 
 1298.33
  -->
-
-
-
 
 
 ## Get Mobile Advanced Pay Or 5G Wifi Prepaid, Not 4G Wifi Prepaid Nor 5G Wifi Postpaid
@@ -95,13 +93,9 @@ Xiaomi 12
 Xiaomi 12 Lite
  -->
 
-
-
 <!-- 26820
 4470
 31290  -->
-
-
 
 <!-- mobile
 20p 2g 3d = 10p/g 6.6p/d

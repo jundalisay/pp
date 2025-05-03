@@ -1,7 +1,7 @@
 ---
 title: "Blockchain"
-image: "/og/easing.jpg"
+c: "firebrick"
 description: "Articles on Blockchain"
-weight: 20
+weight: 12
 ---
 

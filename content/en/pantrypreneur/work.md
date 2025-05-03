@@ -2,24 +2,24 @@
 linkTitle: Work
 title: "Work"
 wow: "Your Own Jobs Site"
-# Better health for all
 description: "Pantrypreneur Work is a jobs site for your own company."
 image: "/og/work.jpg"
 description: "Pantrypreneur Work is a jobs site for your own company. It lets you post jobs and add questions to filter applicants more easily."
+youtube: EP2y4jjGE6Q
 feat: true
 
 
-req:
-  title: Based on the requirements in Book 1, Chapter 8a of the Wealth of Nations
-  link: "https://superphysics.org/research/smith/wealth-of-nations/book-1/chapter-8a"
-  avatar: "/avatars/smith.png"
+# req:
+#   title: Based on the requirements in Book 1, Chapter 8a of the Wealth of Nations
+#   link: "https://superphysics.org/research/smith/wealth-of-nations/book-1/chapter-8a"
+#   avatar: "/avatars/smith.png"
   
 
-triconb:
+bannericon:
   title: "Digitize Human Resources Tasks"
   sub: "Pantrypreneur Work integrates basic Human Resources functionalities to help you manage your staff more easily"
   banner: "/photos/pawns.jpg"
-  items:
+  cards:
     - title: "Personality Questions"
       img: /icons/q.png
       sub : "Filter the applicants based on their personality"
@@ -27,7 +27,6 @@ triconb:
       img: /icons/banker.png
       sub : "Pantrypreneur Work can connect with Pantrypreneur Klock and Appraise to form a basic HR system"
       
-
 
 how:
   title : "How it Works"
@@ -51,8 +50,6 @@ how:
 #       imagetext: "Pantry Health combines all data to come up with possible solutions, referencing both Western and Alternative Medicine, through ISAIAH"
 #     - img: "/screens/services2.jpg"
 #       imagetext: "After you choose the treatment that best matches with you, browse the local third-party suppliers, some of which allow moneyless payments"
-
-
 
 # cta:
 #   title : "I want Work for my Company"

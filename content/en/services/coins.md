@@ -6,18 +6,20 @@ description: "XCoins connect Pantrypoints to the Metaverse and facilitates Pantr
 youtube: "wKR3-nLxec8"
 image: "/og/easing.jpg"
 mobile: true
-
-req:
-  title: Based on the requirements of EF Schumacher
-  link: "https://superphysics.org/research/schumacher/pool-clearing/part-1"
-  avatar: "/avatars/schu.png"  
+# draft: true
 
 
-triconb:
+# req:
+#   title: Based on the requirements of EF Schumacher
+#   link: "https://superphysics.org/research/schumacher/pool-clearing/part-1"
+#   avatar: "/avatars/schu.png"  
+
+
+bannericon:
   banner: "/photos/taxes.jpg"
   title : "'Coin-easing' instead of Quantitative Easing"
   sub: "Point Coins will allow Coin-easing via Pantry Nation and Pool Clearing via Pantry World"
-  items:
+  cards:
     - title : "Coin-easing"
       img: /icons/eth.png
       sub : "Provide fiat liquidity to entrepreneurs to keep the economy going"     
