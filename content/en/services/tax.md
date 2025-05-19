@@ -7,7 +7,8 @@ youtube: "HOtK8qR7LYI"
 image: /og/tax.jpg
 offline: true
 feat: true
-
+aliases:
+  /tax
 
 cta:
   buttons:
@@ -21,7 +22,8 @@ quote:
   content: 'All nations have endeavoured, to the best of their judgment, to render their taxes as equal, certain, convenient as possible. Historical taxes will show that these endeavours were not equally successful'
   url: "https://superphysics.org/research/smith/wealth-of-nations/book-5/chapter-2/part-2a-tax-maxims"
   author: "Adam Smith"
-
+  src: "The Wealth of Nations"
+  
 
 bannericon:
   image: "/photos/taxes.jpg"

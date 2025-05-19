@@ -8,56 +8,6 @@ DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = false
 enableEmoji = true
 
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
-
-[minify]
-  disableCSS = false
-  disableHTML = false
-  disableJS = false
-  disableJSON = false
-  disableSVG = false
-  disableXML = false
-  minifyOutput = false
-  [minify.tdewolff]
-    [minify.tdewolff.css]
-      inline = false
-      keepCSS2 = true
-      precision = 0
-    [minify.tdewolff.html]
-      keepComments = false
-      keepConditionalComments = false
-      keepDefaultAttrVals = true
-      keepDocumentTags = true
-      keepEndTags = true
-      keepQuotes = false
-      keepSpecialComments = true
-      keepWhitespace = false
-      templateDelims = ['', '']
-    [minify.tdewolff.js]
-      keepVarNames = false
-      precision = 0
-      version = 2022
-    [minify.tdewolff.json]
-      keepNumbers = false
-      precision = 0
-    [minify.tdewolff.svg]
-      inline = false
-      keepComments = false
-      precision = 0
-    [minify.tdewolff.xml]
-      keepWhitespace = false
-
 # paginate = 12
 
 [pagination]
@@ -198,10 +148,10 @@ pagerSize = 24
     contentDir = "content/zh"
     weight = 3
     languageName = "简体中"
-    [[languages.zh.menu.main]]
-        name = "Trisactions"
-        url  = "trisactions"
-        weight = 1
+    # [[languages.zh.menu.main]]
+    #     name = "Trisactions"
+    #     url  = "trisactions"
+    #     weight = 1
     # [[languages.zh.menu.main]]
     #     name = "Pantrypreneur"
     #     url  = "pantrypreneur"
@@ -320,8 +270,6 @@ pagerSize = 24
 
     # [languages.zh.params.feedback]
     #   title = "专家意见"
-
-
 
 
   [languages.fr]
@@ -469,10 +417,10 @@ pagerSize = 24
     contentDir = "content/es"
     weight = 10
     languageName = "Español"
-    [[languages.es.menu.main]]
-        name = "Trisactions"
-        url  = "trisactions"
-        weight = 1
+    # [[languages.es.menu.main]]
+    #     name = "Trisactions"
+    #     url  = "trisactions"
+    #     weight = 1
     [[languages.es.menu.main]]
         name = "FAQ"
         url = "faq"
@@ -654,3 +602,52 @@ pagerSize = 24
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = false
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      inline = false
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = false
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepSpecialComments = true
+      keepWhitespace = false
+      templateDelims = ['', '']
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+      version = 2022
+    [minify.tdewolff.json]
+      keepNumbers = false
+      precision = 0
+    [minify.tdewolff.svg]
+      inline = false
+      keepComments = false
+      precision = 0
+    [minify.tdewolff.xml]
+      keepWhitespace = false

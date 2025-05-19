@@ -11,7 +11,7 @@
       <!-- Hamburger Toggle Button (Mobile) -->
       <button id="menu-toggle" class="md:hidden block text-gray-600 focus:outline-none" aria-label="Toggle Menu">
         <svg id="icon-open" class="w-6 h-6 block" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
         <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2"
@@ -34,18 +34,23 @@
       <details class="relative group ml-4">
         <summary class="flex items-center cursor-pointer list-none p-2 hover:bg-gray-100 rounded">
           <img src="{{ .Site.Language.Params.flag | relURL }}" alt="{{ .Site.Language.Params.languageName }} flag" class="w-5 h-auto mr-2">
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 9l-7 7-7-7" />
           </svg>
         </summary>
         <div class="absolute z-10 mt-2 w-40 bg-white rounded-md shadow-lg border border-gray-200 hidden group-open:block">
-          {{ range .Site.Home.AllTranslations }}
-            <a href="{{ .Permalink }}"
-               class="flex items-center px-4 py-2 text-sm hover:bg-gray-100 {{ if eq $.Site.Language.Lang .Language.Lang }}bg-gray-100 font-semibold{{ else }}text-gray-700{{ end }}">
-              <img src="{{ .Language.Params.Flag | relURL }}" alt="{{ .Language.LanguageName }} flag" class="w-5 h-auto mr-2">
-            </a>
-          {{ end }}
+          
+{{ range .Site.Home.AllTranslations }}
+  {{ $lang := .Site.Language }}
+  <a href="{{ .Permalink }}"
+     class="flex items-center px-4 py-2 text-sm hover:bg-gray-100 {{ if eq $.Site.Language.Lang $lang.Lang }}bg-gray-100 font-semibold{{ else }}text-gray-700{{ end }}">
+    {{ with $lang.Params.flag }}
+      <img src="{{ . | relURL }}" alt="{{ $lang.LanguageName }} flag" class="w-5 h-auto mr-2">
+    {{ end }}
+    {{ $lang.LanguageName }}
+  </a>
+{{ end }}
+
         </div>
       </details>
 

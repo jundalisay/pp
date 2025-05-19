@@ -1,9 +1,10 @@
 ---
 title: "How to Help"
 description: "How to Help Superphysics"
-image: /covers/solutions.png
+c: "seagreen"
 draft: true
 ---
+
 
 We're building a new science and new systems for a better reality.
 
