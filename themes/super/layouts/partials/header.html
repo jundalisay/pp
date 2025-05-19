@@ -40,16 +40,16 @@
         </summary>
         <div class="absolute z-10 mt-2 w-40 bg-white rounded-md shadow-lg border border-gray-200 hidden group-open:block">
           
-{{ range .Site.Home.AllTranslations }}
-  {{ $lang := .Site.Language }}
-  <a href="{{ .Permalink }}"
-     class="flex items-center px-4 py-2 text-sm hover:bg-gray-100 {{ if eq $.Site.Language.Lang $lang.Lang }}bg-gray-100 font-semibold{{ else }}text-gray-700{{ end }}">
-    {{ with $lang.Params.flag }}
-      <img src="{{ . | relURL }}" alt="{{ $lang.LanguageName }} flag" class="w-5 h-auto mr-2">
-    {{ end }}
-    {{ $lang.LanguageName }}
-  </a>
-{{ end }}
+      {{ range .Site.Home.AllTranslations }}
+        {{ $lang := .Site.Language }}
+        <a href="{{ .Permalink }}"
+           class="flex items-center px-4 py-2 text-sm hover:bg-gray-100 {{ if eq $.Site.Language.Lang $lang.Lang }}bg-gray-100 font-semibold{{ else }}text-gray-700{{ end }}">
+          {{ with $lang.Params.flag }}
+            <img src="{{ . | relURL }}" alt="{{ $lang.LanguageName }} flag" class="w-5 h-auto mr-2">
+          {{ end }}
+          {{ $lang.LanguageName }}
+        </a>
+      {{ end }}
 
         </div>
       </details>

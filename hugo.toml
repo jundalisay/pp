@@ -278,7 +278,7 @@ pagerSize = 24
     languageName = "Français"
 
     [languages.fr.params]
-      flag = "/flags/gb.png"
+      flag = "/flags/fr.png"
       main = "L'économie circulaire qui résout"
       sub = "Pantrypoints est un nouveau système économique résilient et disruptif qui utilise des points bilatéraux lors de rencontres afin de stopper l'inflation, permettre le plein emploi et réaliser l'économie circulaire"
       banner = "/photos/holdhands.jpg"
