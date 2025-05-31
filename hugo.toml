@@ -61,13 +61,14 @@ pagerSize = 24
 
     [languages.en.params]
       flag = "/flags/gb.png"
-      title = "Superphysics: Science Merged with Metaphysics"
+      # title = ""
       intro = "Presenting: Trisactions"
       main = "The Circular Economy That Solves"
       subtitle = "Pantrypoints is a resilient and disruptive new economic system that uses bilateral points through meetups in order to stop inflation, allow full employment, and realize the circular economy"
       banner = "/photos/holdhands.jpg"
       wow = "Inflation"
-      youtube = "AfByl9Mywi4"
+#      youtube = "AfByl9Mywi4"
+      youtube = "PcRE0Q4uCF4"
 
     [languages.en.params.trio]  # <-- Single brackets define a table
       intro = "Presenting: Trisactions"
