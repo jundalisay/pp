@@ -7,6 +7,7 @@ youtube: "6vX5S_d0VNI"
 image: "/photos/vn/stamp.jpg"
 aliases:
   /about
+  /company
   
 
 bannericon:
