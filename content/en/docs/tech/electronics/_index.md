@@ -3,7 +3,7 @@ title: "Electronics"
 # subtitle: Tech
 image: "/img/tech.jpg"
 description: "Electronics Basics"
-weight: 53
+weight: 24
 ---
 
 

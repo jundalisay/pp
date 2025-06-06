@@ -26,6 +26,6 @@ cta:
   buttons:
     - text: "Contact us!"
       color: bg-blue-100
-      link: "/contact"
+      url: "/contact"
 
 ---

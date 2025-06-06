@@ -1,7 +1,7 @@
 ---
 title: "URI (Uniform Resource Identifier) vs URL (Uniform Resource Locator)"
 date: 2023-08-05
-image: "/photos/code.jpg"
+c: "darkslategray"
 description : "URI (Uniform Resource Identifier) vs URL (Uniform Resource Locator)"
 author: Juan
 ---

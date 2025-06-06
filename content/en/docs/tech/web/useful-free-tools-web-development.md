@@ -1,5 +1,5 @@
 ---
-title: Useful Free Tools for Web Development 2021
+title: Useful Free Tools for Web Development
 description: Here are Useful Free Tools for Web Development for 2021
 image: "https://miro.medium.com/max/4000/0*dCDJ_JD54Ndje_bB.png"
 tags: ['Tools']
@@ -10,13 +10,20 @@ date: 2021-09-06
 
 Here are some free online tools that we use to develop our own app and websites. I've put up this list for my own use in case I have to scrub data using a different computer, like the ones in internet cafes
 
-<br>
 
 Machine Learning Tool | Purpose
 --- | ---
 [Google Colab](https://colab.research.google.com/) | Free online machine learning environment
 
-<br>
+
+Free AI video generators and Faceswap | Purpose (Update 2025)
+--- | ---
+[Runway](https://runwayml.com/) | AI Video Generation
+[Hailuo](https://hailuoai.video/) | AI Video Generation
+[Artgo](https://artgo.ai/) | Faceswap
+[Free Face Swap](https://freefaceswap.ai/video-face-swap/) | Faceswap
+
+
 
 Graphics Resources | Purpose
 --- | ---
@@ -28,14 +35,12 @@ Graphics Resources | Purpose
 [Undraw](https://undraw.com/) | Free Images
 [Unsplash](https://unsplash.com/) | Free Graphics / Illustrations / Photos
 
-<br>
 
 Video Resources | Purpose
 --- | ---
 [Openshot](https://www.openshot.org) | Free video editor
 [Pexels](https://www.pexels.com/videos/) | Free Images and Stock Videos
 
-<br>
 
 Hosting Resources | Purpose
 --- | ---
@@ -48,21 +53,17 @@ Hosting Resources | Purpose
 [Gigalixir](https://gigalixir.com/) | Similar to Heroku but doesn't need a credit card
 [Google Cloud Platform](https://console.cloud.google.com/) | Deploy web servers (needs credit card), has free trial
 
-<br>
-
 Web Tools | Purpose
 --- | ---
 [Observatory](https://observatory.mozilla.org) | Scan your website for vulnerabilities
 [SSL Test](https://www.ssllabs.com/ssltest/index) | Check your SSL
 [Open Ports](https://www.yougetsignal.com/tools/open-ports) | check which ports are open
 
-<br>
 
 Map Tools | Purpose
 --- | ---
 [Lat Long Finder](https://www.latlong.net/) | Latitude and Longitude Finder based on Address data (Faster than Google Maps)
 
-<br>
 
 Text Tools | Purpose 
 --- | --- 
@@ -71,7 +72,6 @@ Text Tools | Purpose
 [Remove Letter Accents](http://www.unit-conversion.info/texttools/remove-letter-accents/) | Useful for non-english text
 [ERB to Slim](https://tools.kaklabs.com/slim-converter.html) | HTML to slim converter for Ruby templates
 
-<br>
 
  Site Performance Tools | Purpose 
 --- | ---
@@ -81,7 +81,6 @@ Text Tools | Purpose
  [Page Insights](https://developers.google.com/speed/pagespeed/insights/) | Check site performance 
 <!-- http://loadimpact.com -->
 
-<br>
 
 SEO Tools | Purpose |
 --- | --- |
@@ -91,8 +90,8 @@ SEO Tools | Purpose |
 [Moz](https://moz.com/domain-analysis) | Check basic SEO |
 [Semrush](https://www.semrush.com/) | Site Audit |
 
-<br>
 
 Social Tools | Purpose
 --- | ---
 [Facebook](https://developers.facebook.com/tools/debug/) | Adds social buttons, check open graph tags
+

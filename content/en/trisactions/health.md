@@ -6,17 +6,19 @@ description: "Diet-Disease Reference is a reference app that allows the five hea
 youtube: M8ztGBQOVDM
 mobile: true
 
-req:
-  title: Based on the requirements in Book 3, Chapter 3 of the Republic
-  link: "https://superphysics.org/research/socrates/simple-republic/book-3/chapter-3"
-  avatar: "/avatars/socrates.png"
 
-
-triconb:  
+quote:
+  content: "It is a disgrace for people to require medicine to cure a disease caused by indolence and bad habits."
+  icon: "Socrates"
+  author: "Socrates"
+  src: "The Repblic by Plato, Book 3, Chapter 3"
+  # url: "https://www.superphysics.org/research/smith/wealth-of-nations/book-2/chapter-2
+  
+bannericon:  
   title: "Five paradigms are better than one"
   sub: "Diet Disease Reference implements Medical Superphysics to use the 5 major medical belief-systems to solve diseases"
   banner: "/photos/yoga2k.jpg"
-  items:
+  cards:
     - title: "Western Medicine"
       img: /icons/meds.png
       sub: "Western Medicine focuses on chemical cures"
@@ -32,8 +34,7 @@ triconb:
     - title: "Homeopathy"
       img: /icons/homeo.png
       sub: "Homeopathy uses like properties to cure like diseases"      
-
-
+      
 how:
   title: "How it Works"
   steps:
@@ -58,43 +59,40 @@ how:
 #       imagetext: The app features a comics series on health foods to engage children 
 #       # imagetext: "After you choose the treatment that best matches with you, browse the local third-party suppliers, some of which allow moneyless payments"
 
-
-
 feedback:
-  title: "Feedback"
-  items:
+  intro: "Feedback"
+  cards:
     - sub: "remotehour.co"
       img: "/icons/remotehourco.png"
       title: "Oh your progress is excellent! Nice work :) With Covid-19, we came to be careful about our health. So your product will be demanded"
-      link: "http://remotehour.co"
+      url: "http://remotehour.co"
     - sub: "iflux.app"
       img: "/icons/ifluxapp.jpg"
       title: "A very awesome platform. I cannot wait for the app to be released" 
-      link: "https://iflux.app"
+      url: "https://iflux.app"
     - sub: "finzen.app"
       img: "/icons/finzen.png"
       title: "In general, I don't put much trust on alternative medicine, but I think that it does have a place in our modern health system and it can be a great complement. " 
-      link: "https://finzen.app"      
+      url: "https://finzen.app"      
     - sub: "matayog.com"
       img: "/icons/matayog.png"
       title: "It's exactly what we are promoting in our wellness center -- a holistic health system!" 
-      link: "https://matayog.com"
+      url: "https://matayog.com"
     - sub: "seobuddy.com"
       img: "/icons/seobuddy.jpg"
       title: "I appreciate the effort and love you put in this vision." 
-      link: "https://seobuddy.com"
+      url: "https://seobuddy.com"
     # - sub: "Aabshar (Pioneer tournament), June 2020"
     #   img: "/avatars/blankavatar.png"
     #   title: "Looking forward to mobile app and website. I believe new medicines are more advanced"
-      # link: "http://www.dhanjooghista.com"
+      # url: "http://www.dhanjooghista.com"
     # - sub: "mon.rocks"
     #   img: "/avatars/blankavatar.png"
     #   title: "Good effort. Anything medtech is especially crucial these days" 
-    #   link: "https://mon.rocks"
-
+    #   url: "https://mon.rocks
 
 cta:
   buttons:
     - text: "Check out the App"
-      link: "https://play.google.com/store/apps/details?id=com.pantrypoints.diet&pli=1"
+      url: "https://play.google.com/store/apps/details?id=com.pantrypoints.diet&pli=1"
 ---

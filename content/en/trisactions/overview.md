@@ -1,25 +1,30 @@
 ---
+title: Trisactions
 description: "Pantrypoints implements trisactions in order to create an Economy-as-a-Service or EaaS platform" 
 image: "/graphics/tri.jpg"
-title: Trisactions
 wow: "A Better Economic System"
 youtube: 6b9R04CgS6w
 weight: 1
 feat: true
+cta:
+  buttons:
+    - text: "View The Parts"
+      url: "/trisactions"
+      
+quote:
+  content: "The revenues arising from both those species of rents were paid in kind, in corn, wine, cattle poultry, etc. The quantity exceeded greatly what the clergy could themselves consume."
+  icon: "Adam Smith"
+  author: "Adam Smith"
+  src: "The Wealth of Nations, Book 5, Chapter 1, Part 3 Article 3"
+  url: "https://www.superphysics.org/research/smith/wealth-of-nations/book-5/chapter-1/part-3u/"
 
 
-req:
-  title: Based on the requirements in Book 5, Chapter 2 of the Republic
-  link: "https://superphysics.org/research/socrates/simple-republic/book-5/chapter-2"
-  avatar: "/avatars/socrates.png"
-
-
-
-triconb:
+bannericon:
   banner: "/photos/dish.jpg"
   title : "The Points Economy"
+  text: "Read about the Points system"
   sub: "Unlike fiat money which is an arbitrary store of value, points are pegged to rice or grains. This allows easier points-taxation, points-accounting and analytics, while eliminating the need for currency exchange."
-  items:
+  cards:
     - title: Loyalty Points
       img: /icons/loy.png
       sub: "These are points given by businesses to their customers to incentivize repeat purchases. This is used to 'train' people in the use of points"
@@ -46,10 +51,10 @@ triconb:
       sub: "These are points given by businesses to their customers to incentivize repeat purchases. This is used to 'train' people in the use of points"
 
 
-tricon:
-  title : "Current Implementations"
-  sub: "The Pantrypoints system is currently being tested by the following"
-  items:
+cards3:
+  intro : "Current Implementations"
+  subintro: "The Pantrypoints system is currently being tested by the following"
+  cards:
     - title: SCENAC
       img: /icons/scenac.png
       sub: "SCENAC is testing Point Cards as a moneyless social insurance system"
@@ -62,13 +67,8 @@ tricon:
     - title: Food Rescue Philippines
       img: /icons/foodrescueph.png
       sub: "Food Rescue Philippines is a volunteer group that will test Pantrypoints Circle for incentivizing food donations"
-      footer: "<span class='has-text-dark'>Mandaluyong</span>"
+      footer: "<span class:'has-text-dark'>Mandaluyong</span>"
 
-
-cta:
-  buttons:
-    - text: "View The Parts"
-      link: "/trisactions"
 
 ---
 

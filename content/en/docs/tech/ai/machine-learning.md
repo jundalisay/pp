@@ -1,7 +1,7 @@
 ---
 title: "Basic Machine Learning Algorithms"
 date: 2022-02-01
-image: "/photos/psych/heart.jpg"
+c: "darkslategray"
 description: "Critical feeling is done by the heart as a sixth or intuitional sense to catch the ego (the feeling of the self)"
 author: Juan
 icon: /icons/sp.png

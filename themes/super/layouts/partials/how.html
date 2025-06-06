@@ -38,17 +38,16 @@
                 {{ if ne $i 0 }}hidden{{ end }}> {{/* Use hidden for accessibility */}}
 
                 <div class="text-center max-w-4xl mx-auto px-4">
-                    {{/* Step Title */}}
+
                     <h3 class="text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4 text-gray-800 dark:text-gray-100">{{ .title | markdownify }}</h3>
                     {{ with .sub }}
                         <p class="mb-5 sm:mb-6 text-base sm:text-lg text-gray-600 dark:text-gray-400">{{ . | markdownify }}</p>
                     {{ end }}
 
-                    {{/* Step Image */}}
                     {{ with .img }}
                         <figure class="mb-6 flex justify-center">
                             <div class="max-h-64 sm:max-h-80 md:max-h-96 w-full max-w-xl flex justify-center items-center bg-gray-100 dark:bg-gray-800 rounded-lg shadow overflow-hidden">
-                                <img class="object-contain h-full w-auto p-1" src="{{ . | absURL }}" loading="lazy" alt="{{ printf "Illustration for %s" $p.title | default "Step illustration" }}">
+                                <img class="object-contain rounded-lg shadow-lg h-full w-auto p-1" src="{{ . | absURL }}" loading="lazy" alt="{{ printf "Illustration for %s" $p.title | default "Step illustration" }}">
                             </div>
                         </figure>
                     {{ end }}

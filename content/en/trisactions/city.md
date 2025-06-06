@@ -4,7 +4,7 @@ wow: "The Resilient, Smart City"
 description: "Pantrypoints City is the platform for hyperlocal trisactions in the city"
 image: "/graphics/city.jpg"
 youtube: GVkVoJzLn2g
-feat: true
+draft: true
 aliases:
   /city
 

@@ -1,7 +1,7 @@
 ---
 title: "Status Codes"
 date: 2023-08-05
-image: "/photos/code.jpg"
+c: "darkslategray"
 description : "Status Codes"
 author: Juan
 ---
