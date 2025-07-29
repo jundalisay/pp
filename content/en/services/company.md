@@ -63,7 +63,7 @@ time:
       sub: "Juan begins personal research on solutions to crises after failing to get higher scholarship"
     - year: "2011"
       title: "Python Flask"
-      sub: "Start of prototyping the solution in Python Flask in preparation for a 2019 Stagflation Crisis"
+      sub: "Start of prototyping the solution in Python Flask in preparation for a [2019 Stagflation Crisis](https://www.superphysics.org/social/supersociology/precrisis-years/)"
     - year: "2015"
       title: "Rails and Javascript"
       sub: "Team is formed. Feature creep forces us into Rails and later React"

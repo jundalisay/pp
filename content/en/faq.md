@@ -138,7 +138,7 @@ How will the government earn, if there is no money in Pantrypoints? [This was ac
 {{< l a="Pantrypoints" >}}
 The government can earn a points-tax per transaction which can be claimed as the goods and services of the person taxed. In this way, Pantrypoints becomes an employment system as well.
 
-So a potato farmer literaly pays potatoes to the government which it then pays to its employees or uses for welfare services, reducing the use of money for such purposes. The revenue that would have gone to the banker to finance that money then goes to the farmer to incentivize his productivity, increasing the real wealth of nations.
+So a potato farmer literally pays potatoes to the government which it then pays to its employees or uses for welfare services, reducing the use of money for such purposes. The revenue that would have gone to the banker to finance that money then goes to the farmer to incentivize his productivity, increasing the real wealth of nations.
 {{< /l >}}
 
 <!-- ## Pantrypreneur and ISAIAH -->
@@ -198,7 +198,7 @@ So a points-based system inherently protects the environment?
 {{< l a="Pantrypoints" >}}
 Yes. It is totally different from the current money-and-gold-based economic system which mines for precious metals and crypto at the expense of the environment. 
 
-This was used by the Khmer Empire (Cambodia) to grow wealthy through foreign trade until they got greedy and maxed out their rice production by destroying their forests which ironically caused a drought which killed the system.  
+A grain-based system was used by the Khmer Empire (Cambodia) to grow wealthy through foreign trade. But they got greedy and maxed out their rice production by destroying their forests which ironically caused a drought which killed the system.  
 {{< /r >}}
 
 
@@ -221,11 +221,11 @@ You can register in [the waitlist](/register), or send us a messsage [here](/con
 What is the current status?
 {{< /r >}}
 
-
- <!-- ~~We will register a real company in Q4 2022 or Q1 2023 depending on the commitments that we get.~~ We piggyback on an NGO to help us implement them. -->
-
 {{< l a="Pantrypoints" >}}
-Our correct prediction of the 2020 Stagflation means that its underlying science, called Superphysics is correct. So from 2024 we have shifted resources to that, and have transferred Pantrypoints to a coconut cooperative to test using coconut oil instead of grains as the basis of valuation, as well as offline barter-credit cards.
+Our correct prediction of the 2020 Stagflation means that its underlying science, called Superphysics is correct. So from 2024 we have shifted resources to that, and have transferred Pantrypoints to a coconut cooperative to test using coconut oil instead of grains as the basis of valuation, as well as offline barter-credit cards. 
+
+They tried to pitch it in 2024 as a moneyless free trade system to counteract tariffs but didn't get support. 
+<!-- It would've counteracted the bad effects of Trump's trade war -->
 {{< /l >}}
 
 {{< r a="Asker" >}}
@@ -237,13 +237,3 @@ Not yet. We exit when that cooperative becomes fully capable to deploy and maint
 
 We then consolidate the findings into building Supereconomics (Economic Superphysics), which is the science behind the system.
 {{< /l >}}
-
-<!-- In an ideal world, 2024 would have been our exit, as Pantrypoints was designed to be the resource provider for Superphysics experiments such as anti-gravity, crystal computers, aether-based disease treatments, etc. But since we had far less support than ideal, most of those experiments are shelved. 
-
-However, this lets us focus on the theory so much more and make it as a real alternative not only to Neoclassical Economics, but also to Modern Physics and Western Medicine to push for policies that not only solve economic crises, but also the Cosmology Crisis, health crisis, territorial disputes, etc.
-
-We have a volunteers who test and contribute to maintain them. So please don't expect them to be bug-free yet.
-
-We predicted that [there would be a global stagflation by 2020, followed by wars of which the effects would last to 2030 to 2035.](https://superphysics.org/social/supersociology/precrisis-years) This would make people interested in our solution sooner or later, and so we chose to play the (very) long game.
-
-The Ukraine and Gaza war and the global inflation happened within that timeframe which proves our principles were correct. This is why we are expanding those principles (as Supereconomics) into Superphysics where we predict things for Physics, such as the failure of the Lambda CDM model.  -->
