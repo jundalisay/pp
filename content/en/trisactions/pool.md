@@ -1,10 +1,15 @@
 ---
-title: "Pantrypoints World"
-wow: "Free Trade System"
+title: "Pool Clearing"
+wow: "A Real Free Trade System"
 image: /graphics/world.jpg
-description: "Pantrypoints World is an import-export platform that allows local currency or barter"
+description: "Pool Clearing is an import-export platform that allows local currency or barter"
 youtube: 25UmGDzactk
 web: true
+aliases:
+  /trisactions/world/
+  /world
+  /pool
+  
 
 quote:
   content: "This might be a good way of getting world trade started again after the war when most countries will find themselves without any international means of payment"
