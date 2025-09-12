@@ -24,9 +24,9 @@ For example, Pantrypreneur Farm links the moneyless sale of agricultural product
 The Maximized Farming system will use sounds and IoT devices which are necessary for experiments under Material Superphysics. 
 
 
-## ISAIAH
+## Superphysics Apps
 
-ISAIAH stands for Impartial Spectator Automated Intelligence Aggregation Host. It will go through the data from the Superphysics implementations just like ChatGPT goes through the internet. 
+<!-- ISAIAH stands for Impartial Spectator Automated Intelligence Aggregation Host. It will go through the data from the Superphysics implementations just like ChatGPT goes through the internet.  -->
 
 
 

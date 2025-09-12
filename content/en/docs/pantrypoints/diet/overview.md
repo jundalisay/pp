@@ -20,7 +20,7 @@ It connects to Pantrypoints via Pantrypoints Health.
 
 Type | Description 
 --- | ---
-Mobile  | Pantrypreneur Diet-Disease Suggest is an offline mobile app with online links to sellers and to ISAIAH
+Mobile  | Pantrypreneur Diet-Disease Suggest is an offline mobile app with online links to sellers and to the Superphysics App
 
 
 

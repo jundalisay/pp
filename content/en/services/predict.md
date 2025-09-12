@@ -1,8 +1,8 @@
 ---
 linkTitle: Predict
-title: "ISAIAH Predict"
-wow: Know your Nations
-description: "ISAIAH Predict is the social prediction tool of Pantrypoints System that uses Supersociology"
+title: "Superphysics Predict"
+wow: Know your Nation
+description: "Superphysics Predict is the social prediction tool of Pantrypoints System that uses Social Superphysics"
 youtube: "5vmCe8w3UEg"
 image: "/graphics/predict.jpg"
 web: true
@@ -16,7 +16,7 @@ req:
 
 bannericon:
   title : "Data-Driven Predictions"
-  sub: "ISAIAH Predict uses historical data to predic outcomes in society"
+  sub: "Superphysics Predict uses historical data to predic outcomes in society"
   image: "/photos/freelance.jpg"  
   cards:
     - title : "Elections"

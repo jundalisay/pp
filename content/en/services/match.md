@@ -1,9 +1,9 @@
 ---
 linkTitle: Match
-title: "ISAIAH Match"
+title: "Superphysics Match"
 wow: "Not Just for Matchmaking"
 # Find the right match. Or just avoid the bad ones"
-description: "ISAIAH Match is our personality matching system for education, jobs, products, fake news, and relationships, as a part of a new morality-based socio-economic system"
+description: "Superphysics Match is our personality matching system for education, jobs, products, fake news, and relationships, as a part of a new morality-based socio-economic system"
 image: "/graphics/match.jpg"
 youtube: 5alMsLDgc00
 mobile: true
@@ -19,7 +19,7 @@ cta:
   
 bannericon:
   title : "Matchmaking isn't just for relationships"
-  sub: "ISAIAH's 'skills' can help solve chronic problems in society that are unsolved by science"
+  sub: "Match can help prevent mismatches within society whether in business, politics, family, or career"
   banner: /photos/shake.jpg
   cards:
     - title : "Employers"
