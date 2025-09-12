@@ -16,7 +16,10 @@
 - age: Your Age
 - gender: Your Gender
 - waitlist: Join the waitlist
-
+- contact: Contact
+- contactus: Contact Us
+- message: Your Message
+- sendusmsg: Send us a message
 
 # Content
 - id: Superphysics_Note
