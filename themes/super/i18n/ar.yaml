@@ -7,7 +7,14 @@
 - by: Written by
 - check: Check out our books
 - sendcomments: Send us your comments!
-
+- prereg: Pre-Registration
+- enterdetails: Enter your details so we can inform you when a server will be ready for your location
+- email: Email Address
+- name: Your Name
+- country: Your Country
+- city: Your City
+- age: Your Age
+- gender: Your Gender
 
 # Content
 - id: Superphysics_Note
