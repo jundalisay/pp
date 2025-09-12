@@ -116,14 +116,15 @@ pagerSize = 24
       intro = "Which Are You?"
       subintro = "Pantrypoints is for everyone"
       cards = [
-        { url = "/services/build/", img = "/icons/shop.png", title = "I'm a micro-small business owner", sub = "I need online presence as a website, web app, mobile app, or social media" },
-        { url = "https://circle.pantrypoints.com/", img = "/icons/jobless.png", title = "I'm Unemployed", sub = "I need to get a job but don't have the required skills" },
-        { url = "/pantrypreneur/educate", img = "/icons/teacher.png", title = "I'm a teacher", sub = "I need to take attendance and visualize student performance" },
-        { url = "/trisactions/health/", img = "/icons/apple.png", title = "I'm health-conscious", sub = "Healtcare is expensive so I need to eat right" },
-        { url = "/trisactions/invesure/", img = "/icons/investor.png", title = "I'm an investor", sub = "I want my investments to make a lot of impact" },
-        { url = "/trisactions/banking", img = "/icons/banker.png", title = "I'm a banker", sub = "I want a solution to banking crises. The stress is too much" },
-        { url = "/pantrypreneur/farm/", img = "/icons/farmer.png", title = "I'm a farmer", sub = "I need a solution to global warming!" },
-        { url = "/services/tax", img = "/icons/gov.png", title = "I'm with the Government", sub = "We need to earn more revenue for public services" }
+        { url = "/services/build/", img = "/icons/shop.jpg", title = "I'm a micro-small business owner", sub = "I need online presence as a website, web app, mobile app, or social media" },
+        { url = "/services/rewards/", img = "/icons/shopper.jpg", title = "I'm a frequent shopper", sub = "I want to get rewards for my brand loyalty" },
+        { url = "https://circle.pantrypoints.com/", img = "/icons/bum.jpg", title = "I'm Unemployed", sub = "I need to get a job but don't have the required skills" },
+        { url = "/pantrypreneur/educate", img = "/icons/teacher.jpg", title = "I'm a teacher", sub = "I need to take attendance and visualize student performance" },
+        { url = "/trisactions/health/", img = "/icons/yoga.jpg", title = "I'm health-conscious", sub = "Healtcare is expensive so I need to eat right" },
+        { url = "/trisactions/invesure/", img = "/icons/investor.jpg", title = "I'm an investor", sub = "I want my investments to make a lot of impact" },
+        { url = "/trisactions/banking", img = "/icons/banker.jpg", title = "I'm a banker", sub = "I want a solution to banking crises. The stress is too much" },
+        { url = "/pantrypreneur/farm/", img = "/icons/farmer.jpg", title = "I'm a farmer", sub = "I need a solution to global warming!" },
+        { url = "/services/tax", img = "/icons/gov.jpg", title = "I'm with the Government", sub = "We need to earn more revenue for public services" }
       ]
 
     [languages.en.params.locations]
@@ -157,10 +158,10 @@ pagerSize = 24
     #     name = "Pantrypreneur"
     #     url  = "pantrypreneur"
     #     weight = 3
-    [[languages.zh.menu.main]]
-        name = "问题"
-        url = "faq"
-        weight = 8
+    # [[languages.zh.menu.main]]
+    #     name = "问题"
+    #     url = "faq"
+    #     weight = 8
 
     [languages.zh.params]
       flag = "/flags/cn.png"
@@ -170,14 +171,20 @@ pagerSize = 24
       wow = "循环经济"
       youtube = "fC9dH2Du0sM"
 
+    [languages.zh.params.trio]  # <-- Single brackets define a table
+      intro = "呈現: 三方交易"
+      subintro = "三方交易（Trisactions）让金钱、无金钱或元宇宙交易无需等待对方的履约。这使得经济可以在任何社会条件下运行，从而实现真正的经济自由"
+      cards = [
+        { img = "/icons/moneyno.png", title = "1: 非貨幣", sub = "无金钱交易使用与谷物挂钩、以积分计量的以物易物信用。", link = "/trisactions/invesure/" },
+        { img = "/icons/money.png", title = "2: 貨幣", sub = "'货币积分'允许通过法定经济中的现金或无现金应用来支付无金钱交易。", link = "/trisactions/banking" },
+        { img = "/icons/eth.png", title = "3: 元宇宙", sub = "这些积分可作为'加密宽松'（我们对量化宽松的替代方案）转换为加密货币，以减少区块链对全球变暖的影响。", link = "/services/coins/" }        # Add more steps as needed
+      ]
+
     [languages.zh.params.cta]
-      title = ""
-    [languages.zh.params.cta.buttons.a]
-      link = "/register"
-      text = "请在等候名单上注册"
-    [languages.zh.params.cta.buttons.b]
-      link = "https://www.superphysics.org/social/economics"
-      text = "阅读有关这个理论的内容"
+      buttons = [
+        { url = "/register", text = "请在等候名单上注册", color = "" },
+        { url = "https://www.superphysics.org/social/economics", text = "阅读有关这个理论的内容", color = "bg-blue-800 dark:bg-blue-200" }
+      ]
 
     [languages.zh.params.req]
       title = "对于对货币一无所知的蒙古人来说，一头牛是价值的衡量标准。对他们来说，财富是以牛的数量来衡量，就像西班牙人以黄金和白银的数量来衡量财富一样。蒙古观念是正确的。（亚当·斯密）"
@@ -286,16 +293,20 @@ pagerSize = 24
       wow = "l'inflation"
       youtube = "AfByl9Mywi4"
 
+    [languages.fr.params.trio]  # <-- Single brackets define a table
+      intro = "Les Trisactions"
+      subintro = "Les Trisactions permettent les transactions monétaires, sans argent ou métavers sans attendre l'exécution de l'autre partie. Cela permet à l'économie de fonctionner sous n'importe quelles conditions sociales, permettant une véritable liberté économique."
+      cards = [
+        { img = "/icons/moneyno.png", title = "1: Sans Argent", sub = "Les transactions sans argent utilisent des crédits de troc mesurés en points, qui sont indexés sur les céréales.", link = "/trisactions/invesure/" },
+        { img = "/icons/money.png", title = "2: Argent", sub = "Les 'points-monnaie' permettent de payer les transactions sans argent via de l'argent liquide ou les applications sans espèces de l'économie fiduciaire.", link = "/trisactions/banking" },
+        { img = "/icons/eth.png", title = "3: Metaverse", sub = "Les points peuvent être convertis en cryptomonnaie sous forme de 'crypto-assouplissement' (notre alternative à l'assouplissement quantitatif) afin de réduire l'impact de la blockchain sur le réchauffement climatique.", link = "/services/coins/" }
+      ]
+
     [languages.fr.params.cta]
-      title = ""
-    [languages.fr.params.cta.buttons.a]
-      link = "/register"
-      text = "Register in the Waitlist"
-      color = ""
-    [languages.fr.params.cta.buttons.b]
-      link = "https://www.superphysics.org/social/economics"
-      text = "Check out the science"
-      color = ""
+      buttons = [
+        { url = "/register", text = "Inscrivez-vous sur la liste d'attente", color = "" },
+        { url = "https://www.superphysics.org/social/economics", text = "Découvrez la science", color = "bg-blue-800 dark:bg-blue-200" }
+      ]
 
     [languages.fr.params.tricon2]
       title = "Quel est votre rôle?"
@@ -357,15 +368,19 @@ pagerSize = 24
       youtube = "AfByl9Mywi4"
 
     [languages.hi.params.cta]
-      title = ""
-    [languages.hi.params.cta.buttons.a]
-      link = "/register"
-      text = "Register in the Waitlist"
-      color = ""
-    [languages.hi.params.cta.buttons.b]
-      link = "https://www.superphysics.org/social/economics"
-      text = "Check out the science"
-      color = ""
+      buttons = [
+        { url = "/register", text = "प्रतीक्षा सूची में पंजीकरण करें", color = "" },
+        { url = "https://www.superphysics.org/social/economics", text = "विज्ञान की जाँच करें", color = "bg-blue-800 dark:bg-blue-200" }
+      ]
+
+    [languages.hi.params.trio]  # <-- Single brackets define a table
+      intro = "ट्राइजेक्शन (Trisactions)"
+      subintro = "ट्राइजेक्शन (Trisactions) पैसों, बिना पैसों या मेटावर्स के लेन-देन को दूसरे पक्ष से पूर्ति का इंतजार किए बिना ही होने देता है। यह अर्थव्यवस्था को किसी भी सामाजिक परिस्थिति में चलने की अनुमति देता है, जिससे सच्ची आर्थिक स्वतंत्रता मिलती है।"
+      # cards = [
+      #   { img = "/icons/moneyno.png", title = "1: Sans Argent", sub = "Les transactions sans argent utilisent des crédits de troc mesurés en points, qui sont indexés sur les céréales.", link = "/trisactions/invesure/" },
+      #   { img = "/icons/money.png", title = "2: Argent", sub = "Les 'points-monnaie' permettent de payer les transactions sans argent via de l'argent liquide ou les applications sans espèces de l'économie fiduciaire.", link = "/trisactions/banking" },
+      #   { img = "/icons/eth.png", title = "3: Metaverse", sub = "Les points peuvent être convertis en cryptomonnaie sous forme de 'crypto-assouplissement' (notre alternative à l'assouplissement quantitatif) afin de réduire l'impact de la blockchain sur le réchauffement climatique.", link = "/services/coins/" }
+      # ]
 
     [languages.hi.params.tricon2]
       title = "आपकी भूमिका क्या है?"
@@ -553,7 +568,7 @@ pagerSize = 24
   enableSearch = true
 
   # Custom copyright - optional
-  copyright = "Copyright © 2025 | <a class='text-white dark:text-white' href='/company/'>Pantrypoints Technologies</a> | Based on <a class='text-white dark:text-white' href='https://www.superphysics.org'>Superphysics</a>"
+  copyright = "Copyright © 2025 | <a class='text-white dark:text-white !important text-decoration: none;' href='/company/'>Pantrypoints Technologies</a> | Based on <a class='text-white dark:text-white !important text-decoration: none;' href='https://www.superphysics.org'>Superphysics</a>"
   favicon = "/icons/pantry50.png"
 
   ascentColor = "bg-blue-100"
@@ -572,8 +587,6 @@ pagerSize = 24
   # Add support for Table of contents
   # Can be added to a page level also in markdown frontmatter
   toc = true
-
-
   hidePageThumbnail = false
 
 

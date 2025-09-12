@@ -20,7 +20,7 @@ quote:
 
 
 bannericon:
-  banner: "/photos/dish.jpg"
+  banner: "/covers/mall.jpg"
   title : "The Points Economy"
   text: "Read about the Points system"
   sub: "Unlike fiat money which is an arbitrary store of value, points are pegged to rice or grains. This allows easier points-taxation, points-accounting and analytics, while eliminating the need for currency exchange."
