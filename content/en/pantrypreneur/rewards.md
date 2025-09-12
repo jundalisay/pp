@@ -5,18 +5,19 @@ wow: "Loyalty based on Points"
 image: /og/rewards.jpg
 description: "Pantrypreneur Rewards gives incentives to frequent purchases to keep the economy going"
 youtube: AM4KpYvNXHg
-feat: tru
+feat: true
 
 
 bannericon:
   banner: "/photos/shake.jpg"
   title : "Incentivize Loyal Behavior"
+  sub: "Give points for every purchase"
   cards:
     - title: "For Consumers"
-      img: /icons/appraise.png
+      img: /icons/shopper.jpg
       sub: "Get free or discounted items for repeat purchases"            
     - title: "For Companies"
-      img: /icons/investor.png
+      img: /icons/investor.jpg
       sub: "Encourage sales and connect with your customers"
 
 
