@@ -20,19 +20,19 @@ bannericon:
   sub: "Pantry Circle will help the unemployed and unbanked get access to food through their local community"
   cards:
     - title: "For the Unemployed"
-      img: /icons/jobless.png
+      img: /icons/bum.jpg
       sub: "Avoid hunger by doing something useful for your community"      
     - title: "For Restaurants and Food Retailers"
-      img: /icons/herb2.png
+      img: /icons/chef.jpg
       sub: "Get non-monetary incentives for giving away food waste"
     - title: "For Urban and Rural Farmers"
-      img: "/icons/herb.png"
+      img: "/icons/farmer.jpg"
       sub: "Get compost in exchange for excess harvest"
     - title: "For Recyclers"
-      img: /icons/banking.png
+      img: /icons/const.jpg
       sub: "Get more recyclable material at lower cost"
     - title: "For Government"
-      img: /icons/gov.png
+      img: /icons/gov.jpg
       sub: "Provide welfare for the poor at a much lower cost and get updated data quickly"
 
 how:
