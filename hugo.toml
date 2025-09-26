@@ -75,7 +75,7 @@ pagerSize = 24
       subintro = "Trisactions allow money, moneyless, or metaverse transactions without waiting for fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"    
       cards = [
         { img = "/icons/moneyno.png", title = "1: Moneyless", sub = "Moneyless transactions use barter-credits measured in points which are pegged to grains", link = "/trisactions/invesure/" },
-        { img = "/icons/money.png", title = "2: Money", sub = "'Money points' allow money to pay for the moneyless transactions via cash or cashless apps of the fiat economy", link = "/trisactions/banking" },
+        { img = "/icons/money.png", title = "2: Money", sub = "'Money points' allow money payments via cash or cashless apps of the fiat economy", link = "/trisactions/banking" },
         { img = "/icons/eth.png", title = "3: Metaverse", sub = "The points can be converted to crypto as 'crypto-easing' (our alternative to quantitative easing) to reduce the impact of blockchain on global warming", link = "/services/coins/" }        # Add more steps as needed
       ]
 
