@@ -27,14 +27,15 @@
             <div class="flex items-center w-full col-span-6">
                 <div class="px-6 h-96 lg:h-100% w-full max-w-2xl col-span-6 flex items-center mx-auto">
                     <div style="width: 100%; height: 100%;">
-                        <div style="width: 100%; height: 100%;">
-                            <iframe frameborder="0" allowfullscreen="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    width="100%" height="100%"
-                                    src="https://www.youtube.com/embed/{{ .Site.Params.youtube }}?autoplay=1&mute=1&controls=0&"
-                                    id="widget2">
-                            </iframe>
-                        </div>
+
+                        {{ with .Params.youtube }}
+                        <iframe frameborder="0" allowfullscreen="1"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                width="100%" height="100%"
+                                src="https://www.youtube.com/embed/{{ . }}?autoplay=1&mute=1&controls=0&"
+                                id="widget2">
+                        </iframe>
+                        {{ end }}
                     </div>
                 </div>
             </div>
