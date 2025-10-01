@@ -73,7 +73,7 @@ pagerSize = 24
     [languages.en.params.trio]  # <-- Single brackets define a table
       intro = "Wealth Creation Without Money"
       # intro = "Presenting: Trisactions"
-      subintro = "The <a href='https://www.youtube.com/watch?v=8s3bdVxuFBs'>One Red Paper Clip</a> proves that wealth can be created from a paper clip into a house without any money through exchange. We create an exchange system to democratize wealth creation for all"
+      subintro = "The book <a href='https://www.youtube.com/watch?v=8s3bdVxuFBs'>One Red Paper Clip</a> proves that wealth can be created from a paper clip into a house without any money through exchange. We create an exchange system to democratize wealth creation for all"
       # isactions allow money, moneyless, or multilateral transactions without immediate fulfillment from the other party. This allows the economy to run under any social conditions, allowing true economic freedom"
       cards = [
         { img = "/icons/moneyno.png", title = "1: Moneyless First", sub = "We pioneer barter-credits measured in points pegged to grains as a sweet spot between barter and money", link = "/trisactions/invesure/" },
