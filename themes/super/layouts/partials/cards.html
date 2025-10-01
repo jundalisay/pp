@@ -1,9 +1,9 @@
 <section class="max-w-screen-lg mx-auto text-center py-4 lg:py-24">
 
-  <h3 class="text-4xl font-bold tracking-tight dark:text-gray-200">{{ .intro }}</h3>
+  <h3 class="text-4xl font-bold tracking-tight dark:text-gray-200">{{ .intro | safeHTML }}</h3>
   
   {{ with .subintro }}
-    <p class="leading-tight dark:text-gray-200 py-4">{{ . }}</p>
+    <p class="leading-tight dark:text-gray-200 py-4">{{ . | safeHTML }}</p>
   {{ end }}
 
   <div class="flex flex-wrap justify-center">
