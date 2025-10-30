@@ -178,5 +178,8 @@ blockquote {
 
 strong {color: mediumseagreen !important;}
 
-a {color: teal !important;}
+/*a {color: teal !important;}*/
 
+a {
+  hover:text-green-600;
+}

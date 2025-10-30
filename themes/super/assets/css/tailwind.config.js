@@ -6,6 +6,7 @@ module.exports = {
     content: [
       themeDir + "layouts/**/*.html",
       themeDir + "content/**/*.html",
+      themeDir + "content/**/**/*.html",      
       "layouts/**/*.html",
       "hugo.toml",
       "content/**/*.html",
@@ -13,6 +14,8 @@ module.exports = {
       "assets/js/search.js"
     ],
   },
+
+
   darkMode: "class",
   theme: {
     extend: {
