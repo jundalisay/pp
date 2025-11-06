@@ -2,8 +2,9 @@
 title: "Privacy Policy for the Pantrypoints Health Offline Reference App"
 image: "/logos/pantry.png"
 description: "Privacy Policy of Pantrypoints Health"
+date: 2025-11-01
+layout: "privacy"
 ---
-
 
 
 Effective Date: November 1, 2025
