@@ -19,6 +19,37 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'fly-in-right': {
+          '0%': { 
+            opacity: '0', 
+            transform: 'translateX(100%)' // Start 100% off-screen to the right
+          },
+          '100%': { 
+            opacity: '1', 
+            transform: 'translateX(0)' // End at its final position
+          },
+        },
+        'fly-in-left': { // New keyframes for flying in from the left
+          '0%': { 
+            opacity: '0', 
+            transform: 'translateX(-100%)' // Start 100% off-screen to the left
+          },
+          '100%': { 
+            opacity: '1', 
+            transform: 'translateX(0)' // End at its final position
+          },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.8s ease-in forwards',
+        'fly-in-from-right': 'fly-in-right 1s ease-out forwards', // 1s duration, ease-out timing, stays at end
+        'fly-in-from-left': 'fly-in-left 1s ease-out forwards',   // 1s duration, ease-out timing, stays at end
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: [
