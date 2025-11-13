@@ -2,7 +2,10 @@
 title: "Privacy Policy"
 image: "/logos/pantry.png"
 description: "Privacy Policy of Pantry"
+date: 2025-11-01
+layout: "privacy"
 ---
+
 
 
 Our website and apps provide content and service that implements Supereconomics.

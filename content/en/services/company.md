@@ -80,10 +80,4 @@ time:
     - year: "2025"
       title: "Sveltekit on Turso"
       sub: "We overhaul Pantrypoints into Sveltekit on Cloudflare using the Turso database in preparation for the coming crisis of 2028-2029 from Trump's policies Our correct predictions help strengthen superiority of <a href='https://superphysics.org/docs/supereconomics/social/economics/nutshell'>Supereconomics</a> over Economics"
-
-# cta:
-#   buttons:
-#     - text: "Check out our Works"
-#       link: "/works"
-
 ---
